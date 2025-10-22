@@ -1,0 +1,1927 @@
+{
+  "url": "https://www.aimeleondore.com/collections/shop-all",
+  "platform": "Shopify",
+  "selector": "a.plp-product",
+  "products": [
+    {
+      "name": "Satin Bomber Jacket",
+      "url": "https://www.aimeleondore.com/products/satin-bomber-jacket-1",
+      "price": "$695",
+      "product_id": "7377060954209",
+      "color": "Vetiver",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25WJ018_SatinBomberJacket_Vetiver_1_600x.jpg?v=1758732186"
+    },
+    {
+      "name": "Satin Bomber Jacket",
+      "url": "https://www.aimeleondore.com/products/satin-bomber-jacket",
+      "price": "$695",
+      "product_id": "7377060888673",
+      "color": "Orangeade",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25WJ018_SatinBomberJacket_Orangeade_1_600x.jpg?v=1758732132"
+    },
+    {
+      "name": "Collegiate Cable Knit Rugby",
+      "url": "https://www.aimeleondore.com/products/collegiate-cable-knit-rugby",
+      "price": "$395",
+      "product_id": "7377063247969",
+      "color": "CHOCOLATE TRUFFLE",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25KS017_TieDyeCableRugby_CHOCOLATETRUFFLE_1_600x.jpg?v=1758660017"
+    },
+    {
+      "name": "Collegiate Cable Knit Rugby",
+      "url": "https://www.aimeleondore.com/products/collegiate-cable-knit-rugby-1",
+      "price": "$395",
+      "product_id": "7377063313505",
+      "color": "Troposphere",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25KS017_TieDyeCableRugby_Troposphere_1_600x.jpg?v=1758660071"
+    },
+    {
+      "name": "Birdseye Single Pleated Trouser",
+      "url": "https://www.aimeleondore.com/products/birdseye-single-pleated-trouser-1",
+      "price": "$395",
+      "product_id": "7377061642337",
+      "color": "Brown",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25WP033_Pants_Brown_1_600x.jpg?v=1758659968"
+    },
+    {
+      "name": "Birdseye Single Pleated Trouser",
+      "url": "https://www.aimeleondore.com/products/birdseye-single-pleated-trouser",
+      "price": "$395",
+      "product_id": "7377061609569",
+      "color": "NAVY",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25WP033_Pants_NavyWhite_1_600x.jpg?v=1758659919"
+    },
+    {
+      "name": "ALD / New     Balance       475",
+      "url": "https://www.aimeleondore.com/products/ald-new-balance-477",
+      "price": "$150",
+      "product_id": "7276948979809",
+      "color": "PRISTINE",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/NB25FS003_NB475_22_600x.jpg?v=1743085628"
+    },
+    {
+      "name": "ALD / New Balance 475",
+      "url": "https://www.aimeleondore.com/products/ald-new-balance-475",
+      "price": "$150",
+      "product_id": "7210046488673",
+      "color": "Green",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/4x5_FW24D2_ACC_FW24FS008_GREEN_1715_600x.jpg?v=1725388058"
+    },
+    {
+      "name": "Saddle Stitch Leather Belt",
+      "url": "https://www.aimeleondore.com/products/saddle-stitch-leather-belt",
+      "price": "$180",
+      "product_id": "7359015780449",
+      "color": "JET BLACK",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL040_SADDLEBELT_JETBLACK_1_600x.jpg?v=1756848989"
+    },
+    {
+      "name": "Saddle Stitch Leather Belt",
+      "url": "https://www.aimeleondore.com/products/saddle-stitch-leather-belt-1",
+      "price": "$180",
+      "product_id": "7359015813217",
+      "color": "Saddle Brown",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL040_SADDLEBELT_SaddleBrown_1_600x.jpg?v=1756849038"
+    },
+    {
+      "name": "Collegiate Mulberry Hat",
+      "url": "https://www.aimeleondore.com/products/collegiate-mulberry-hat",
+      "price": "$70",
+      "product_id": "7377067114593",
+      "color": "Coconut Milk",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH010_BrushedMulberryCap_CoconutMilk_1_600x.jpg?v=1758660242"
+    },
+    {
+      "name": "Collegiate Mulberry Hat",
+      "url": "https://www.aimeleondore.com/products/collegiate-mulberry-hat-1",
+      "price": "$70",
+      "product_id": "7377067147361",
+      "color": "CHOCOLATE TRUFFLE",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH010_BrushedMulberryCap_CHOCOLATETRUFFLE_1_600x.jpg?v=1758660290"
+    },
+    {
+      "name": "Heritage Wool Varsity Jacket",
+      "url": "https://www.aimeleondore.com/products/heritage-wool-varsity-jacket",
+      "price": "$795",
+      "product_id": "7349723103329",
+      "color": "GREY",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/WJ019_GREY_2_600x.jpg?v=1755717544"
+    },
+    {
+      "name": "Heritage Wool Varsity Jacket",
+      "url": "https://www.aimeleondore.com/products/heritage-wool-varsity-jacket-1",
+      "price": "$795",
+      "product_id": "7349723136097",
+      "color": "NAVY BLAZER",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/WJ019_NAVYBLAZER_4_600x.jpg?v=1755717681"
+    },
+    {
+      "name": "Fisherman Cable Knit Sweater",
+      "url": "https://www.aimeleondore.com/products/fisherman-cable-knit-sweater",
+      "price": "$495",
+      "product_id": "7377061740641",
+      "color": "SKY CAPTAIN",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25KS005_FishermanCrewneck_SKYCAPTAIN_1_600x.jpg?v=1758662702"
+    },
+    {
+      "name": "Fisherman Cable Knit Sweater",
+      "url": "https://www.aimeleondore.com/products/fisherman-cable-knit-sweater-1",
+      "price": "$495",
+      "product_id": "7377061773409",
+      "color": "Camel",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25KS005_FishermanCrewneck_CAMEL_1_600x.jpg?v=1758662777"
+    },
+    {
+      "name": "Suede Lug Sole Derby",
+      "url": "https://www.aimeleondore.com/products/suede-lug-sole-derby",
+      "price": "$425",
+      "product_id": "7377065476193",
+      "color": "Coffee Bean",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25FD009_SuedeDerby_CoffeeBean_2_600x.jpg?v=1758732563"
+    },
+    {
+      "name": "Suede Lug Sole Derby",
+      "url": "https://www.aimeleondore.com/products/suede-lug-sole-derby-1",
+      "price": "$425",
+      "product_id": "7377065574497",
+      "color": "Vetiver",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25FD009_SuedeDerby_Vetiver_22_600x.jpg?v=1758732662"
+    },
+    {
+      "name": "Suede Shoulder Bag",
+      "url": "https://www.aimeleondore.com/products/suede-shoulder-bag-1",
+      "price": "$495",
+      "product_id": "7377066229857",
+      "color": "ESPRESSO",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL008_SMALLLEATHERCROSSBODYBAG_ESPRESSO_1_600x.jpg?v=1758732845"
+    },
+    {
+      "name": "Suede Shoulder Bag",
+      "url": "https://www.aimeleondore.com/products/suede-shoulder-bag",
+      "price": "$495",
+      "product_id": "7377066197089",
+      "color": "Vetiver",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL008_SMALLLEATHERCROSSBODYBAG_Vetiver_1_600x.jpg?v=1758732744"
+    },
+    {
+      "name": "Wool Colorblock Crest Hat",
+      "url": "https://www.aimeleondore.com/products/wool-colorblock-crest-hat",
+      "price": "$85",
+      "product_id": "7349730836577",
+      "color": "JET BLACK",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH014_MeltonWoolColorblockCap_JETBLACK_1_600x.jpg?v=1755711126"
+    },
+    {
+      "name": "Wool Colorblock Crest Hat",
+      "url": "https://www.aimeleondore.com/products/wool-colorblock-crest-hat-1",
+      "price": "$85",
+      "product_id": "7349730869345",
+      "color": "NAVY BLAZER",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH014_MeltonWoolColorblockCap_NAVYBLAZER_1_600x.jpg?v=1755711162"
+    },
+    {
+      "name": "Filled Work Shirt",
+      "url": "https://www.aimeleondore.com/products/filled-work-shirt",
+      "price": "$495",
+      "product_id": "7377061216353",
+      "color": "NAVY BLAZER",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/WT007_NAVYBLAZER_1_600x.jpg?v=1758662662"
+    },
+    {
+      "name": "Striped Filled Work Shirt",
+      "url": "https://www.aimeleondore.com/products/striped-filled-work-shirt",
+      "price": "$495",
+      "product_id": "7377061511265",
+      "color": "WHITE STRIPE",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/WT033_WHITESTRIPE_3_600x.jpg?v=1758732525"
+    },
+    {
+      "name": "Denim Collarband Shirt",
+      "url": "https://www.aimeleondore.com/products/denim-collarband-shirt-1",
+      "price": "$250",
+      "product_id": "7377061314657",
+      "color": "LIGHT WASH",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25WT015_LSBandcollarShirt_LIGHTWASH_1_600x.jpg?v=1758661956"
+    },
+    {
+      "name": "Denim Collarband Shirt",
+      "url": "https://www.aimeleondore.com/products/denim-collarband-shirt",
+      "price": "$250",
+      "product_id": "7377061281889",
+      "color": "MID WASH",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25WT015_LSBandcollarShirt_MIDWASH_1_600x.jpg?v=1758661915"
+    },
+    {
+      "name": "Vintage Script Crewneck",
+      "url": "https://www.aimeleondore.com/products/vintage-script-crewneck-1",
+      "price": "$185",
+      "product_id": "7349720055905",
+      "color": "SKY CAPTAIN",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CS007_SKYCAPTAIN_1_5364bbdf-0b1d-4753-a5ce-8fd5040a9e0d_600x.jpg?v=1755721124"
+    },
+    {
+      "name": "Vintage Script Crewneck",
+      "url": "https://www.aimeleondore.com/products/vintage-script-crewneck",
+      "price": "$185",
+      "product_id": "7349720023137",
+      "color": "Oatmeal",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CS007_OATMEAL_1_600x.jpg?v=1755720950"
+    },
+    {
+      "name": "Vintage Script Crewneck",
+      "url": "https://www.aimeleondore.com/products/vintage-script-crewneck-2",
+      "price": "$185",
+      "product_id": "7349720088673",
+      "color": "Pine Grove",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CS007_PINEGROVE_1_600x.jpg?v=1755721145"
+    },
+    {
+      "name": "Record Breakers Tee",
+      "url": "https://www.aimeleondore.com/products/record-breakers-tee-2",
+      "price": "$95",
+      "product_id": "7377060364385",
+      "color": "BRIGHT WHITE",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CT039_BRIGHTWHITE_2_600x.jpg?v=1758731703"
+    },
+    {
+      "name": "Record Breakers Tee",
+      "url": "https://www.aimeleondore.com/products/record-breakers-tee",
+      "price": "$95",
+      "product_id": "7377060266081",
+      "color": "YELLOW PEAR",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CT039_YELLOWPEAR_2_600x.jpg?v=1758731581"
+    },
+    {
+      "name": "Record Breakers Tee",
+      "url": "https://www.aimeleondore.com/products/record-breakers-tee-1",
+      "price": "$95",
+      "product_id": "7377060298849",
+      "color": "Otter Heather",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CT039_OTTERHEATHER_4_600x.jpg?v=1758731631"
+    },
+    {
+      "name": "Dock Hoodie",
+      "url": "https://www.aimeleondore.com/products/dock-hoodie-1",
+      "price": "$250",
+      "product_id": "7377057120353",
+      "color": "Oceana",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CH005_OCEANA_1_600x.jpg?v=1758662515"
+    },
+    {
+      "name": "Dock Hoodie",
+      "url": "https://www.aimeleondore.com/products/dock-hoodie",
+      "price": "$250",
+      "product_id": "7377057022049",
+      "color": "Oatmeal Melange",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CH005_OATMEALMELANGE_1_600x.jpg?v=1758662415"
+    },
+    {
+      "name": "Merino Surplus Beanie",
+      "url": "https://www.aimeleondore.com/products/merino-surplus-beanie-1",
+      "price": "$85",
+      "product_id": "7377067737185",
+      "color": "Naval Academy",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH020_Beanie_Navy_1_600x.jpg?v=1758728083"
+    },
+    {
+      "name": "Merino Surplus Beanie",
+      "url": "https://www.aimeleondore.com/products/merino-surplus-beanie",
+      "price": "$85",
+      "product_id": "7377067704417",
+      "color": "Rosin",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH020_Beanie_Rosin_1_600x.jpg?v=1758728090"
+    },
+    {
+      "name": "Surplus Duffle Bag",
+      "url": "https://www.aimeleondore.com/products/surplus-duffle-bag",
+      "price": "$195",
+      "product_id": "7377067343969",
+      "color": "NAVY",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AB007_Bag_Blue_1_600x.jpg?v=1758732879"
+    },
+    {
+      "name": "Surplus Duffle Bag",
+      "url": "https://www.aimeleondore.com/products/surplus-duffle-bag-1",
+      "price": "$195",
+      "product_id": "7377067376737",
+      "color": "OLIVE",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AB007_Bag_Green_1_600x.jpg?v=1758732950"
+    },
+    {
+      "name": "Unisphere Label Hat",
+      "url": "https://www.aimeleondore.com/products/unisphere-label-hat-1",
+      "price": "$150",
+      "product_id": "7377066950753",
+      "color": "Rosin",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH015_UnisphereLabelCap_Kalamata_1_600x.jpg?v=1758733214"
+    },
+    {
+      "name": "Unisphere Label Hat",
+      "url": "https://www.aimeleondore.com/products/unisphere-label-hat",
+      "price": "$150",
+      "product_id": "7377066917985",
+      "color": "PRISTINE",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH015_UnisphereLabelCap_PRISTINE_1_600x.jpg?v=1758733183"
+    },
+    {
+      "name": "Queens Crest Crown Bandana",
+      "url": "https://www.aimeleondore.com/products/queens-crest-crown-bandana-1",
+      "price": "$50",
+      "product_id": "7377067901025",
+      "color": "Pine Grove",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AS009_COTTONBANDANA_PineGrove_1_600x.jpg?v=1758731357"
+    },
+    {
+      "name": "Queens Crest Crown Bandana",
+      "url": "https://www.aimeleondore.com/products/queens-crest-crown-bandana",
+      "price": "$50",
+      "product_id": "7377067868257",
+      "color": "NAVY BLAZER",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AS009_COTTONBANDANA_NAVYBLAZER_1_600x.jpg?v=1758731320"
+    },
+    {
+      "name": "Crest Varsity Sock",
+      "url": "https://www.aimeleondore.com/products/crest-varsity-sock",
+      "price": "$40",
+      "product_id": "7349730738273",
+      "color": "MARLED GREY",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/AS004_GREY_1_600x.jpg?v=1755718878"
+    },
+    {
+      "name": "Crest Varsity Sock",
+      "url": "https://www.aimeleondore.com/products/crest-varsity-sock-1",
+      "price": "$40",
+      "product_id": "7349730771041",
+      "color": "White",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/AS004_WHITE_1_600x.jpg?v=1755719023"
+    },
+    {
+      "name": "Queens Crest Loafer",
+      "url": "https://www.aimeleondore.com/products/queens-crest-loafer-4",
+      "price": "$395",
+      "product_id": "7309779370081",
+      "color": "BLACK",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/4x5_Aime_SS24_Drop1_Accessories_SS24FD001_2b11.50.45AM_600x.jpg?v=1748445244"
+    },
+    {
+      "name": "Queens     Crest     Loafer",
+      "url": "https://www.aimeleondore.com/products/queens-crest-loafer-2",
+      "price": "$395",
+      "product_id": "7111945093217",
+      "color": "Green Multi",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/4x5_Aime_SS24_Drop1_Accessories_SS24FD001_PINEGROVEPRISTINE_2b_600x.jpg?v=1748372876"
+    },
+    {
+      "name": "Full   Grain   Leather   Bi-Fold Wallet",
+      "url": "https://www.aimeleondore.com/products/full-grain-leather-bi-fold-wallet-3",
+      "price": "$180",
+      "product_id": "7349730115681",
+      "color": "NAVY BLAZER",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL042_LEATHERBIFOLDWALLET_NavyBlazer_1_600x.jpg?v=1755714869"
+    },
+    {
+      "name": "Full   Grain   Leather   Bi-Fold Wallet",
+      "url": "https://www.aimeleondore.com/products/full-grain-leather-bi-fold-wallet-4",
+      "price": "$180",
+      "product_id": "7349730148449",
+      "color": "ESPRESSO",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL042_LEATHERBIFOLDWALLET_ESPRESSO_1_600x.jpg?v=1755715010"
+    },
+    {
+      "name": "Full   Grain   Leather   Bi-Fold Wallet",
+      "url": "https://www.aimeleondore.com/products/full-grain-leather-bi-fold-wallet-5",
+      "price": "$180",
+      "product_id": "7349730181217",
+      "color": "SCARLET",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL042_LEATHERBIFOLDWALLET_Scarlet_1_600x.jpg?v=1755715100"
+    },
+    {
+      "name": "Full    Grain    Leather Cardholder",
+      "url": "https://www.aimeleondore.com/products/full-grain-leather-cardholder-5",
+      "price": "$120",
+      "product_id": "7349730345057",
+      "color": "SCARLET",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL041_LEATHERCARDHOLDER_SCARLET_1_600x.jpg?v=1755715344"
+    },
+    {
+      "name": "Full    Grain    Leather Cardholder",
+      "url": "https://www.aimeleondore.com/products/full-grain-leather-cardholder-3",
+      "price": "$120",
+      "product_id": "7349730279521",
+      "color": "NAVY BLAZER",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL041_LEATHERCARDHOLDER_NavyBlazer_1_600x.jpg?v=1755715193"
+    },
+    {
+      "name": "Full    Grain    Leather Cardholder",
+      "url": "https://www.aimeleondore.com/products/full-grain-leather-cardholder-4",
+      "price": "$120",
+      "product_id": "7349730312289",
+      "color": "ESPRESSO",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL041_LEATHERCARDHOLDER_Espresso_1_600x.jpg?v=1755715256"
+    },
+    {
+      "name": "Full Grain Leather Crescent Shoulder Bag",
+      "url": "https://www.aimeleondore.com/products/full-grain-leather-crescent-shoulder-bag",
+      "price": "$895",
+      "product_id": "7349730443361",
+      "color": "JET BLACK",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL006_CRESCENTSHOULDERBAG_JETBLACK-ESPRESSO_1_600x.jpg?v=1755643217"
+    },
+    {
+      "name": "Full Grain Leather Crescent Shoulder Bag",
+      "url": "https://www.aimeleondore.com/products/full-grain-leather-crescent-shoulder-bag-1",
+      "price": "$895",
+      "product_id": "7349730476129",
+      "color": "COGNAC",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL006_CRESCENTSHOULDERBAG_COGNAC_1_600x.jpg?v=1755643150"
+    },
+    {
+      "name": "Full Grain Leather Mini Traveler Kit",
+      "url": "https://www.aimeleondore.com/products/full-grain-leather-mini-traveler-kit",
+      "price": "$295",
+      "product_id": "7349730541665",
+      "color": "JET BLACK",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL007_ESPRESSO_600x.jpg?v=1755643008"
+    },
+    {
+      "name": "Full Grain Leather Mini Traveler Kit",
+      "url": "https://www.aimeleondore.com/products/full-grain-leather-mini-traveler-kit-1",
+      "price": "$295",
+      "product_id": "7349730574433",
+      "color": "COGNAC",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL007_LEATHERMINIDOPPKIT_COGNAC_1_600x.jpg?v=1755642828"
+    },
+    {
+      "name": "Full Grain Leather Keychain Pouch",
+      "url": "https://www.aimeleondore.com/products/full-grain-leather-keychain-pouch-1",
+      "price": "$295",
+      "product_id": "7349730639969",
+      "color": "SCARLET",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL009_ROUNDKEYCHAINPOUCH_SCARLET_1_600x.jpg?v=1755643040"
+    },
+    {
+      "name": "Full Grain Leather Keychain Pouch",
+      "url": "https://www.aimeleondore.com/products/full-grain-leather-keychain-pouch",
+      "price": "$295",
+      "product_id": "7349730607201",
+      "color": "JET BLACK",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL009_ROUNDKEYCHAINPOUCH_JetBlack_1_600x.jpg?v=1755643113"
+    },
+    {
+      "name": "ALD / Porsche GORE-TEX Cabrio Jacket",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-gore-tex-cabrio-jacket-1",
+      "price": "SOLD OUT",
+      "product_id": "7384754978913",
+      "color": "Tango Red",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/WJ070_RED_1_600x.jpg?v=1760548752"
+    },
+    {
+      "name": "ALD / Porsche GORE-TEX Cabrio Jacket",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-gore-tex-cabrio-jacket",
+      "price": "$1,200",
+      "product_id": "7384754946145",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/WJ070_BLACK_8_600x.jpg?v=1760548622"
+    },
+    {
+      "name": "ALD / Porsche Jacquard Collar Quarter Zip Pullover",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-jacquard-collar-quarter-zip-pullover",
+      "price": "$350",
+      "product_id": "7384754585697",
+      "color": "Charcoal",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CS015_CHARCOAL_2_600x.jpg?v=1760549329"
+    },
+    {
+      "name": "ALD / Porsche Jacquard Collar Quarter Zip Pullover",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-jacquard-collar-quarter-zip-pullover-1",
+      "price": "SOLD OUT",
+      "product_id": "7384754618465",
+      "color": "Pine Grove",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CS015_PINEGROVE_2_600x.jpg?v=1760549395"
+    },
+    {
+      "name": "ALD / Porsche Colorblock Logo Hat",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-colorblock-logo-hat-1",
+      "price": "$85",
+      "product_id": "7384755765345",
+      "color": "JET BLACK MULTI",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH050_Cap_JetBlack_1_600x.jpg?v=1760542139"
+    },
+    {
+      "name": "ALD / Porsche Colorblock Logo Hat",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-colorblock-logo-hat",
+      "price": "SOLD OUT",
+      "product_id": "7384755699809",
+      "color": "PRISTINE MULTI",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH050_Cap_Pristine_1_600x.jpg?v=1760542121"
+    },
+    {
+      "name": "ALD / Porsche Crest Rugby",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-crest-rugby-1",
+      "price": "SOLD OUT",
+      "product_id": "7384754749537",
+      "color": "Equestrian Red",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CT044_RED_4_600x.jpg?v=1760542666"
+    },
+    {
+      "name": "ALD / Porsche Crest Rugby",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-crest-rugby",
+      "price": "$295",
+      "product_id": "7384754716769",
+      "color": "PRISTINE",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CT044_PRESTINE_4_600x.jpg?v=1760542594"
+    },
+    {
+      "name": "ALD / Porsche Full-Zip Hoodie",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-full-zip-hoodie-1",
+      "price": "$250",
+      "product_id": "7384754126945",
+      "color": "Pine Grove",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CH007_PINEGROVE_1_600x.jpg?v=1760548478"
+    },
+    {
+      "name": "ALD / Porsche Full-Zip Hoodie",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-full-zip-hoodie-2",
+      "price": "$250",
+      "product_id": "7384754192481",
+      "color": "Silver Mix",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CH007_SILVERMIX_1_600x.jpg?v=1760548550"
+    },
+    {
+      "name": "ALD / Porsche Full-Zip Hoodie",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-full-zip-hoodie",
+      "price": "$250",
+      "product_id": "7384754061409",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CH007_JETBLACK_1_600x.jpg?v=1760544392"
+    },
+    {
+      "name": "ALD / Porsche Racing Polo",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-racing-polo",
+      "price": "$225",
+      "product_id": "7384755044449",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25CT043_POLO_JetBlack_1_600x.jpg?v=1760550941"
+    },
+    {
+      "name": "ALD / Porsche Nylon Briefcase",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-nylon-briefcase",
+      "price": "$1,200",
+      "product_id": "7384756322401",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL031_Bag_Black_1_600x.jpg?v=1760549844"
+    },
+    {
+      "name": "ALD / Porsche Commuter Bag",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-commuter-bag",
+      "price": "$995",
+      "product_id": "7384756387937",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AL032_Bag_Black_1_600x.jpg?v=1760542544"
+    },
+    {
+      "name": "ALD / Porsche Embroidered Crewneck Sweatshirt",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-embroidered-crewneck-sweatshirt-1",
+      "price": "$225",
+      "product_id": "7384753635425",
+      "color": "Silver Mix",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CS014_SILVERMIX_1_600x.jpg?v=1760542832"
+    },
+    {
+      "name": "ALD / Porsche Embroidered Crewneck Sweatshirt",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-embroidered-crewneck-sweatshirt",
+      "price": "$225",
+      "product_id": "7384753537121",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CS014_JETBLACK_2_600x.jpg?v=1760542766"
+    },
+    {
+      "name": "ALD / Porsche Jacquard Logo Sweatpant",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-jacquard-logo-sweatpant-1",
+      "price": "$225",
+      "product_id": "7384753307745",
+      "color": "Silver Mix",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25CP003_Sweatpants_Grey_1_600x.jpg?v=1760549507"
+    },
+    {
+      "name": "ALD / Porsche Jacquard Logo Sweatpant",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-jacquard-logo-sweatpant",
+      "price": "$225",
+      "product_id": "7384753274977",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25CP003_Sweatpants_JetBlack_1_600x.jpg?v=1760549431"
+    },
+    {
+      "name": "ALD / Porsche Nylon Track Jacket",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-nylon-track-jacket-1",
+      "price": "SOLD OUT",
+      "product_id": "7384755208289",
+      "color": "Tango Red",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/WJ071_RED_1_600x.jpg?v=1760550237"
+    },
+    {
+      "name": "ALD / Porsche Nylon Track Jacket",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-nylon-track-jacket",
+      "price": "SOLD OUT",
+      "product_id": "7384755175521",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/WJ071_BLACK_1_600x.jpg?v=1760550138"
+    },
+    {
+      "name": "ALD / Porsche Nylon Track Pant",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-nylon-track-pant-1",
+      "price": "$295",
+      "product_id": "7384755306593",
+      "color": "Tango Red",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25WP039_Sweatpants_Red_1_600x.jpg?v=1760550887"
+    },
+    {
+      "name": "ALD / Porsche Nylon Track Pant",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-nylon-track-pant",
+      "price": "$295",
+      "product_id": "7384755273825",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25WP039_Sweatpants_JetBlack_1_1_600x.jpg?v=1760550558"
+    },
+    {
+      "name": "ALD / Porsche Long-Sleeve Apex Tee",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-long-sleeve-apex-tee",
+      "price": "$150",
+      "product_id": "7384753799265",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CT046_JETBLACK_3_600x.jpg?v=1760549619"
+    },
+    {
+      "name": "ALD / Porsche Long-Sleeve Apex Tee",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-long-sleeve-apex-tee-1",
+      "price": "$150",
+      "product_id": "7384753832033",
+      "color": "Pine Grove",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CT046_PINEGROVE_1_600x.jpg?v=1760549672"
+    },
+    {
+      "name": "ALD / Porsche Racing Tee",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-racing-tee",
+      "price": "$95",
+      "product_id": "7384754815073",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25CT045_TEE_jetblack_1_600x.jpg?v=1760550982"
+    },
+    {
+      "name": "ALD / Porsche Racing Tee",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-racing-tee-1",
+      "price": "$95",
+      "product_id": "7384754847841",
+      "color": "Silver Mix",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25CT045_TEE_SilverMix_1_600x.jpg?v=1760551062"
+    },
+    {
+      "name": "ALD / Porsche Fleet Tee",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-fleet-tee",
+      "price": "SOLD OUT",
+      "product_id": "7384754880609",
+      "color": "BRIGHT WHITE",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25CT062_Tee_BrightWhite_2_600x.jpg?v=1760558946"
+    },
+    {
+      "name": "ALD / Porsche Nylon Logo Hat",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-nylon-logo-hat",
+      "price": "$85",
+      "product_id": "7384755601505",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH049_Cap_JetBlack_1_600x.jpg?v=1760549944"
+    },
+    {
+      "name": "ALD / Porsche Nylon Logo Hat",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-nylon-logo-hat-1",
+      "price": "SOLD OUT",
+      "product_id": "7384755634273",
+      "color": "ASPEN GOLD",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH049_Cap_AspenGold_1_600x.jpg?v=1760549972"
+    },
+    {
+      "name": "ALD / Porsche Nylon Logo Hat",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-nylon-logo-hat-2",
+      "price": "$85",
+      "product_id": "7384755667041",
+      "color": "Pine Grove",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH049_Cap_PineGrove_1_600x.jpg?v=1760550060"
+    },
+    {
+      "name": "ALD / Porsche Canvas Tote Bag",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-canvas-tote-bag-1",
+      "price": "$150",
+      "product_id": "7384757043297",
+      "color": "Natural",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AB037_PorscheToteBag_natural_1_600x.jpg?v=1760541484"
+    },
+    {
+      "name": "ALD / Porsche Canvas Tote Bag",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-canvas-tote-bag",
+      "price": "$150",
+      "product_id": "7384757010529",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AB037_PorscheToteBag_JetBlack_1_600x.jpg?v=1760541449"
+    },
+    {
+      "name": "ALD / Porsche Wool Skullcap",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-wool-skullcap-2",
+      "price": "SOLD OUT",
+      "product_id": "7384755503201",
+      "color": "PRISTINE",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH051_Beanie_Pristine_1_600x.jpg?v=1760551867"
+    },
+    {
+      "name": "ALD / Porsche Wool Skullcap",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-wool-skullcap",
+      "price": "SOLD OUT",
+      "product_id": "7384755437665",
+      "color": "Pine Grove",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH051_Beanie_PineGrove_1_600x.jpg?v=1760551777"
+    },
+    {
+      "name": "ALD / Porsche Wool Skullcap",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-wool-skullcap-1",
+      "price": "SOLD OUT",
+      "product_id": "7384755470433",
+      "color": "ASPEN GOLD",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH051_Beanie_AspenGold_1_600x.jpg?v=1760551809"
+    },
+    {
+      "name": "ALD / Porsche Cashmere Beanie",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-cashmere-beanie-1",
+      "price": "SOLD OUT",
+      "product_id": "7384756191329",
+      "color": "Tango Red",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/AH052_TANGORED_2_600x.jpg?v=1760541832"
+    },
+    {
+      "name": "ALD / Porsche Cashmere Beanie",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-cashmere-beanie",
+      "price": "SOLD OUT",
+      "product_id": "7384756158561",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/AH052_BLACK_2_600x.jpg?v=1760541796"
+    },
+    {
+      "name": "ALD / Porsche Cashmere Beanie",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-cashmere-beanie-2",
+      "price": "SOLD OUT",
+      "product_id": "7384756224097",
+      "color": "Pine Grove",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/AH052_PINEGROVE_2_600x.jpg?v=1760541858"
+    },
+    {
+      "name": "ALD / Porsche Leather Driving Gloves",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-leather-driving-gloves",
+      "price": "SOLD OUT",
+      "product_id": "7384756453473",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AS021_black_1_600x.jpg?v=1760549552"
+    },
+    {
+      "name": "ALD / Porsche Leather Driving Gloves",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-leather-driving-gloves-1",
+      "price": "SOLD OUT",
+      "product_id": "7384756519009",
+      "color": "Pine Grove",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AS021_pinegrove_1_600x.jpg?v=1760549585"
+    },
+    {
+      "name": "ALD / Porsche Silk Bandana",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-silk-bandana",
+      "price": "$160",
+      "product_id": "7384755929185",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AS019_PorscheSilkBandana_JetBlack_1_600x.jpg?v=1760551254"
+    },
+    {
+      "name": "ALD / Porsche Silk Bandana",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-silk-bandana-1",
+      "price": "$160",
+      "product_id": "7384755961953",
+      "color": "Pine Grove",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AS019_PorscheSilkBandana_PineGrove_1_600x.jpg?v=1760551338"
+    },
+    {
+      "name": "ALD / Porsche Wool Racing Scarf",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-wool-racing-scarf",
+      "price": "$175",
+      "product_id": "7384756027489",
+      "color": "Tango Red",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AS020_PorscheScarf_TangoRed_22_600x.jpg?v=1760551547"
+    },
+    {
+      "name": "ALD / Porsche Wool Racing Scarf",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-wool-racing-scarf-1",
+      "price": "COMING SOON",
+      "product_id": "7384756060257",
+      "color": "Pine Grove",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/AS020_GREEN_1_600x.jpg?v=1760551634"
+    },
+    {
+      "name": "ALD / Porsche Wool Racing Scarf",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-wool-racing-scarf-2",
+      "price": "COMING SOON",
+      "product_id": "7384756093025",
+      "color": "JET BLACK",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/AS020_BLACK_1_600x.jpg?v=1760551698"
+    },
+    {
+      "name": "ALD / Porsche Grille Badge",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-grille-badge",
+      "price": "$150",
+      "product_id": "7384756617313",
+      "color": "356",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AT051_356_0fc66862-ebe9-4c8f-b606-c1919434c353_600x.jpg?v=1760728004"
+    },
+    {
+      "name": "ALD / Porsche Grille Badge",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-grille-badge-1",
+      "price": "$150",
+      "product_id": "7384756650081",
+      "color": "944",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AT051_944_a8b56507-27d8-458d-a9f7-a4e168aa56f4_600x.jpg?v=1760727942"
+    },
+    {
+      "name": "ALD / Porsche Grille Badge",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-grille-badge-2",
+      "price": "$150",
+      "product_id": "7384756682849",
+      "color": "911 SC",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AT051_911SC_3fe3b5a0-94f1-4ef4-8dfa-9e87523a13a7_600x.jpg?v=1760727917"
+    },
+    {
+      "name": "ALD / Porsche Grille Badge",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-grille-badge-3",
+      "price": "$150",
+      "product_id": "7384756715617",
+      "color": "CARRERA 4",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AT051_Carrera4_3a773743-c8a9-4dd5-bc48-86b35d51dbb5_600x.jpg?v=1760727881"
+    },
+    {
+      "name": "ALD / Porsche Grille Badge",
+      "url": "https://www.aimeleondore.com/products/ald-porsche-grille-badge-4",
+      "price": "$150",
+      "product_id": "7384756748385",
+      "color": "993",
+      "is_new": true,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AT051_993_d633055a-082f-43aa-ad90-3c4aef3448a7_600x.jpg?v=1760727812"
+    },
+    {
+      "name": "Leather Flight Jacket",
+      "url": "https://www.aimeleondore.com/products/leather-flight-jacket",
+      "price": "$1,295",
+      "product_id": "7359013453921",
+      "color": "JET BLACK",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25_D2_LOOKBOOK_PDP_24_600x.jpg?v=1757105236"
+    },
+    {
+      "name": "Leather Flight Jacket",
+      "url": "https://www.aimeleondore.com/products/leather-flight-jacket-1",
+      "price": "$1,295",
+      "product_id": "7359013486689",
+      "color": "Rocky Road",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25_D2_LOOKBOOK_PDP_14_600x.jpg?v=1757105211"
+    },
+    {
+      "name": "Surplus Houndstooth Crewneck Sweater",
+      "url": "https://www.aimeleondore.com/products/surplus-houndstooth-crewneck-sweater",
+      "price": "$495",
+      "product_id": "7359012667489",
+      "color": "Green Camo",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/KS002_GREENCAMO_1_600x.jpg?v=1756850048"
+    },
+    {
+      "name": "Surplus Houndstooth Crewneck Sweater",
+      "url": "https://www.aimeleondore.com/products/surplus-houndstooth-crewneck-sweater-1",
+      "price": "$495",
+      "product_id": "7359012700257",
+      "color": "Beige Camo",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/KS002_BEIGECAMO_1_600x.jpg?v=1756850109"
+    },
+    {
+      "name": "Plaid Hand-Knit Overshirt",
+      "url": "https://www.aimeleondore.com/products/plaid-hand-knit-overshirt",
+      "price": "$495",
+      "product_id": "7359013093473",
+      "color": "Red Plaid",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/KS004_REDPLAID_3_600x.jpg?v=1756848708"
+    },
+    {
+      "name": "Plaid Hand-Knit Overshirt",
+      "url": "https://www.aimeleondore.com/products/plaid-hand-knit-overshirt-1",
+      "price": "$495",
+      "product_id": "7359013159009",
+      "color": "Stone Plaid",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/KS004_STONEPLAID_1_600x.jpg?v=1756848764"
+    },
+    {
+      "name": "Drop Needle Surplus Hoodie",
+      "url": "https://www.aimeleondore.com/products/drop-needle-surplus-hoodie",
+      "price": "$225",
+      "product_id": "7359007817825",
+      "color": "Rosin",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CH002_ROSIN_2_600x.jpg?v=1756846280"
+    },
+    {
+      "name": "Drop Needle Surplus Hoodie",
+      "url": "https://www.aimeleondore.com/products/drop-needle-surplus-hoodie-1",
+      "price": "$225",
+      "product_id": "7359007883361",
+      "color": "Dark Sapphire",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CH002_DARKSAPPHIRE_1_600x.jpg?v=1756846314"
+    },
+    {
+      "name": "Drop Needle Surplus Hoodie",
+      "url": "https://www.aimeleondore.com/products/drop-needle-surplus-hoodie-2",
+      "price": "$225",
+      "product_id": "7359007916129",
+      "color": "Heather Grey",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CH002_HEATHERGREY_1_600x.jpg?v=1756846349"
+    },
+    {
+      "name": "Drop Needle Surplus Sweatpants",
+      "url": "https://www.aimeleondore.com/products/drop-needle-surplus-sweatpants-2",
+      "price": "$225",
+      "product_id": "7359007228001",
+      "color": "Heather Grey",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CP000_HEATHERGREY_1_600x.jpg?v=1756846469"
+    },
+    {
+      "name": "Drop Needle Surplus Sweatpants",
+      "url": "https://www.aimeleondore.com/products/drop-needle-surplus-sweatpants",
+      "price": "$225",
+      "product_id": "7359007096929",
+      "color": "Rosin",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CP000_ROSIN_4_600x.jpg?v=1756846388"
+    },
+    {
+      "name": "Drop Needle Surplus Sweatpants",
+      "url": "https://www.aimeleondore.com/products/drop-needle-surplus-sweatpants-1",
+      "price": "$225",
+      "product_id": "7359007162465",
+      "color": "Dark Sapphire",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/CP000_DARKSAPPHIRE_1_600x.jpg?v=1756846426"
+    },
+    {
+      "name": "Lightweight Fleece Shirt",
+      "url": "https://www.aimeleondore.com/products/lightweight-fleece-shirt-1",
+      "price": "$225",
+      "product_id": "7359012077665",
+      "color": "SILVER BIRCH",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/WT005_SILVERBIRCH_1_600x.jpg?v=1756848042"
+    },
+    {
+      "name": "Lightweight Fleece Shirt",
+      "url": "https://www.aimeleondore.com/products/lightweight-fleece-shirt-2",
+      "price": "$225",
+      "product_id": "7359012143201",
+      "color": "SKY CAPTAIN",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/WT005_SKYCAPTAIN_1_600x.jpg?v=1756848090"
+    },
+    {
+      "name": "Lightweight Fleece Shirt",
+      "url": "https://www.aimeleondore.com/products/lightweight-fleece-shirt",
+      "price": "$225",
+      "product_id": "7359011979361",
+      "color": "Poinciana",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/WT005_POINCIANA_3_600x.jpg?v=1756847928"
+    },
+    {
+      "name": "Lightweight Printed Fleece Shirt",
+      "url": "https://www.aimeleondore.com/products/lightweight-printed-fleece-shirt",
+      "price": "$295",
+      "product_id": "7359013814369",
+      "color": "Pattern",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/WT032_PATTERN_1_600x.jpg?v=1756848217"
+    },
+    {
+      "name": "Record Breakers Wide Bill Hat",
+      "url": "https://www.aimeleondore.com/products/record-breakers-wide-bill-hat",
+      "price": "$85",
+      "product_id": "7377067212897",
+      "color": "NAVY BLAZER",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH032_Aimv_DynastyCap_NAVYBLAZER_1_600x.jpg?v=1758731789"
+    },
+    {
+      "name": "Record Breakers Wide Bill Hat",
+      "url": "https://www.aimeleondore.com/products/record-breakers-wide-bill-hat-1",
+      "price": "$85",
+      "product_id": "7377067278433",
+      "color": "Coconut Milk",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25AH032_Aimv_DynastyCap_CoconutMilk_1_600x.jpg?v=1758731833"
+    },
+    {
+      "name": "Full-Zip Pavilion Cashmere Hoodie",
+      "url": "https://www.aimeleondore.com/products/full-zip-pavilion-cashmere-hoodie",
+      "price": "$595",
+      "product_id": "7377062068321",
+      "color": "SKY CAPTAIN",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25KS007_CashmereHoodie_SKYCAPTAIN_600x.jpg?v=1758663438"
+    },
+    {
+      "name": "Full-Zip Pavilion Cashmere Hoodie",
+      "url": "https://www.aimeleondore.com/products/full-zip-pavilion-cashmere-hoodie-2",
+      "price": "$595",
+      "product_id": "7377062232161",
+      "color": "GYM GREY",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "https://www.aimeleondore.com/cdn/shop/files/FW25KS007_CashmereHoodie_GYMGREY-rev2_600x.jpg?v=1758663605"
+    },
+    {
+      "name": "Full-Zip Pavilion Cashmere Hoodie",
+      "url": "https://www.aimeleondore.com/products/full-zip-pavilion-cashmere-hoodie-1",
+      "price": "$595",
+      "product_id": "7377062166625",
+      "color": "Rosin",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Pavilion Cashmere Sweatpant",
+      "url": "https://www.aimeleondore.com/products/pavilion-cashmere-sweatpant-1",
+      "price": "$550",
+      "product_id": "7377062625377",
+      "color": "Rosin",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Pavilion Cashmere Sweatpant",
+      "url": "https://www.aimeleondore.com/products/pavilion-cashmere-sweatpant",
+      "price": "$550",
+      "product_id": "7377062527073",
+      "color": "SKY CAPTAIN",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Pavilion Cashmere Sweatpant",
+      "url": "https://www.aimeleondore.com/products/pavilion-cashmere-sweatpant-2",
+      "price": "$550",
+      "product_id": "7377062723681",
+      "color": "GYM GREY",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Leon Quarter Zip Fleece Pullover",
+      "url": "https://www.aimeleondore.com/products/leon-quarter-zip-fleece-pullover",
+      "price": "$255",
+      "product_id": "7349722939489",
+      "color": "LAUREL OAK",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Leon Quarter Zip Fleece Pullover",
+      "url": "https://www.aimeleondore.com/products/leon-quarter-zip-fleece-pullover-1",
+      "price": "$255",
+      "product_id": "7349722972257",
+      "color": "Pine Grove",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Leon Quarter Zip Fleece Pullover",
+      "url": "https://www.aimeleondore.com/products/leon-quarter-zip-fleece-pullover-2",
+      "price": "$255",
+      "product_id": "7349723037793",
+      "color": "BLUE QUARTZ",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Crest Sport Rugby",
+      "url": "https://www.aimeleondore.com/products/crest-sport-rugby",
+      "price": "$225",
+      "product_id": "7359009685601",
+      "color": "Heather Grey",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Crest Sport Rugby",
+      "url": "https://www.aimeleondore.com/products/crest-sport-rugby-1",
+      "price": "$225",
+      "product_id": "7359009751137",
+      "color": "NAVY BLAZER",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Crest Sport Rugby",
+      "url": "https://www.aimeleondore.com/products/crest-sport-rugby-2",
+      "price": "$225",
+      "product_id": "7359009816673",
+      "color": "SHADOW PURPLE",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Officer Pant",
+      "url": "https://www.aimeleondore.com/products/officer-pant",
+      "price": "$295",
+      "product_id": "7359006343265",
+      "color": "GREEN",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Officer Pant",
+      "url": "https://www.aimeleondore.com/products/officer-pant-1",
+      "price": "$295",
+      "product_id": "7359006376033",
+      "color": "Kelp",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Venetian Buckle Loafer",
+      "url": "https://www.aimeleondore.com/products/venetian-buckle-loafer",
+      "price": "$450",
+      "product_id": "7349729362017",
+      "color": "BLACK",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Venetian Croc Buckle Loafer",
+      "url": "https://www.aimeleondore.com/products/venetian-croc-buckle-loafer",
+      "price": "$495",
+      "product_id": "7349729394785",
+      "color": "ESPRESSO",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Striped Heritage Rugby",
+      "url": "https://www.aimeleondore.com/products/striped-heritage-rugby-1",
+      "price": "$250",
+      "product_id": "7349721628769",
+      "color": "Pine Grove",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Striped Heritage Rugby",
+      "url": "https://www.aimeleondore.com/products/striped-heritage-rugby-2",
+      "price": "$250",
+      "product_id": "7349721661537",
+      "color": "Equestrian Red",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Striped Heritage Rugby",
+      "url": "https://www.aimeleondore.com/products/striped-heritage-rugby",
+      "price": "SOLD OUT",
+      "product_id": "7349721596001",
+      "color": "PRISTINE",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Double   Pleated Pant",
+      "url": "https://www.aimeleondore.com/products/double-pleated-pant-13",
+      "price": "$295",
+      "product_id": "7349719728225",
+      "color": "SKY CAPTAIN",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Double Pleated   Pant",
+      "url": "https://www.aimeleondore.com/products/double-pleated-pant-10",
+      "price": "$295",
+      "product_id": "7261597761633",
+      "color": "BRIGHT WHITE",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Double Pleated   Pant",
+      "url": "https://www.aimeleondore.com/products/double-pleated-pant-11",
+      "price": "SOLD OUT",
+      "product_id": "7261597827169",
+      "color": "Coffee Bean",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Double Pleated   Pant",
+      "url": "https://www.aimeleondore.com/products/double-pleated-pant-12",
+      "price": "$295",
+      "product_id": "7261597892705",
+      "color": "LAUREL OAK",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Mulberry Playing Cards",
+      "url": "https://www.aimeleondore.com/products/mulberry-playing-cards",
+      "price": "$50",
+      "product_id": "7377068294241",
+      "color": "Multi",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Unisphere Waffle Lined Full-Zip Hoodie",
+      "url": "https://www.aimeleondore.com/products/unisphere-waffle-lined-full-zip-hoodie-2",
+      "price": "$275",
+      "product_id": "7349721235553",
+      "color": "NAVY BLAZER",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Unisphere Waffle Lined Full-Zip Hoodie",
+      "url": "https://www.aimeleondore.com/products/unisphere-waffle-lined-full-zip-hoodie-3",
+      "price": "$275",
+      "product_id": "7349721268321",
+      "color": "JET BLACK",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Unisphere Waffle Lined Full-Zip Hoodie",
+      "url": "https://www.aimeleondore.com/products/unisphere-waffle-lined-full-zip-hoodie",
+      "price": "$275",
+      "product_id": "7349721170017",
+      "color": "Silver Mix",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Unisphere Waffle Lined Full-Zip Hoodie",
+      "url": "https://www.aimeleondore.com/products/unisphere-waffle-lined-full-zip-hoodie-1",
+      "price": "$275",
+      "product_id": "7349721202785",
+      "color": "Equestrian Red",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Crest Piqué Half-Zip Pullover",
+      "url": "https://www.aimeleondore.com/products/crest-pique-half-zip-pullover-1",
+      "price": "$225",
+      "product_id": "7359008833633",
+      "color": "Oatmeal Melange",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Crest Piqué Half-Zip Pullover",
+      "url": "https://www.aimeleondore.com/products/crest-pique-half-zip-pullover",
+      "price": "$225",
+      "product_id": "7359008768097",
+      "color": "Charcoal Melange",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Crest Piqué Half-Zip Pullover",
+      "url": "https://www.aimeleondore.com/products/crest-pique-half-zip-pullover-2",
+      "price": "$225",
+      "product_id": "7359008964705",
+      "color": "Rosin",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Corduroy Overshirt",
+      "url": "https://www.aimeleondore.com/products/corduroy-overshirt-3",
+      "price": "$250",
+      "product_id": "7359012503649",
+      "color": "Rocky Road",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Corduroy Overshirt",
+      "url": "https://www.aimeleondore.com/products/corduroy-overshirt-5",
+      "price": "$250",
+      "product_id": "7359012569185",
+      "color": "Plaza Taupe",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Corduroy Overshirt",
+      "url": "https://www.aimeleondore.com/products/corduroy-overshirt-4",
+      "price": "$250",
+      "product_id": "7359012536417",
+      "color": "Vetiver",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Single Pleated Corduroy Pant",
+      "url": "https://www.aimeleondore.com/products/single-pleated-corduroy-pant-1",
+      "price": "$325",
+      "product_id": "7359005950049",
+      "color": "Brown",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Single Pleated Corduroy Pant",
+      "url": "https://www.aimeleondore.com/products/single-pleated-corduroy-pant-2",
+      "price": "$325",
+      "product_id": "7359005982817",
+      "color": "Vetiver",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Single Pleated Corduroy Pant",
+      "url": "https://www.aimeleondore.com/products/single-pleated-corduroy-pant",
+      "price": "$325",
+      "product_id": "7359005884513",
+      "color": "BLACK",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Leather Derby Hiker",
+      "url": "https://www.aimeleondore.com/products/leather-derby-hiker",
+      "price": "$450",
+      "product_id": "7359015059553",
+      "color": "BLACK",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Suede Derby Hiker",
+      "url": "https://www.aimeleondore.com/products/suede-derby-hiker-1",
+      "price": "$450",
+      "product_id": "7359014666337",
+      "color": "ROSIN",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Suede Derby Hiker",
+      "url": "https://www.aimeleondore.com/products/suede-derby-hiker",
+      "price": "$450",
+      "product_id": "7359014633569",
+      "color": "Poinciana",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Full-Zip Dock Hoodie",
+      "url": "https://www.aimeleondore.com/products/full-zip-dock-hoodie",
+      "price": "$350",
+      "product_id": "7377054859361",
+      "color": "SKY CAPTAIN",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Full-Zip Dock Hoodie",
+      "url": "https://www.aimeleondore.com/products/full-zip-dock-hoodie-1",
+      "price": "$350",
+      "product_id": "7377054892129",
+      "color": "Climbing Ivy",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Wingfoot Track Hoodie",
+      "url": "https://www.aimeleondore.com/products/wingfoot-track-hoodie-2",
+      "price": "$225",
+      "product_id": "7349721464929",
+      "color": "Pine Grove",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Wingfoot Track Hoodie",
+      "url": "https://www.aimeleondore.com/products/wingfoot-track-hoodie",
+      "price": "$225",
+      "product_id": "7349721399393",
+      "color": "Oatmeal",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Wingfoot Track Hoodie",
+      "url": "https://www.aimeleondore.com/products/wingfoot-track-hoodie-1",
+      "price": "$225",
+      "product_id": "7349721432161",
+      "color": "NAVY BLAZER",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Slub Merino Mockneck Sweater",
+      "url": "https://www.aimeleondore.com/products/slub-merino-mockneck-sweater",
+      "price": "$295",
+      "product_id": "7377064099937",
+      "color": "GREY",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Slub Merino Mockneck Sweater",
+      "url": "https://www.aimeleondore.com/products/slub-merino-mockneck-sweater-1",
+      "price": "$295",
+      "product_id": "7377064198241",
+      "color": "JET BLACK",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Slub Merino Mockneck Sweater",
+      "url": "https://www.aimeleondore.com/products/slub-merino-mockneck-sweater-2",
+      "price": "$295",
+      "product_id": "7377064329313",
+      "color": "Pine Grove",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Carpenter Overshirt",
+      "url": "https://www.aimeleondore.com/products/carpenter-overshirt-1",
+      "price": "$295",
+      "product_id": "7349723365473",
+      "color": "PRISTINE",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Carpenter Overshirt",
+      "url": "https://www.aimeleondore.com/products/carpenter-overshirt",
+      "price": "$295",
+      "product_id": "7349723332705",
+      "color": "Pine Green",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Carpenter Overshirt",
+      "url": "https://www.aimeleondore.com/products/carpenter-overshirt-2",
+      "price": "$295",
+      "product_id": "7349723398241",
+      "color": "Sunstruck",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Heavyweight Waffle Thermal",
+      "url": "https://www.aimeleondore.com/products/heavyweight-waffle-thermal-2",
+      "price": "$150",
+      "product_id": "7377060069473",
+      "color": "Oceana",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Heavyweight Waffle Thermal",
+      "url": "https://www.aimeleondore.com/products/heavyweight-waffle-thermal",
+      "price": "$150",
+      "product_id": "7377060003937",
+      "color": "Heather Grey",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Heavyweight Waffle Thermal",
+      "url": "https://www.aimeleondore.com/products/heavyweight-waffle-thermal-1",
+      "price": "$150",
+      "product_id": "7377060036705",
+      "color": "PRISTINE",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Corduroy Unisphere Hat",
+      "url": "https://www.aimeleondore.com/products/corduroy-unisphere-hat-3",
+      "price": "$85",
+      "product_id": "7359016304737",
+      "color": "NAVY BLAZER",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Corduroy Unisphere Hat",
+      "url": "https://www.aimeleondore.com/products/corduroy-unisphere-hat-2",
+      "price": "SOLD OUT",
+      "product_id": "7359016271969",
+      "color": "Rust",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Corduroy Unisphere Hat",
+      "url": "https://www.aimeleondore.com/products/corduroy-unisphere-hat",
+      "price": "SOLD OUT",
+      "product_id": "7359016206433",
+      "color": "Twill",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Corduroy Unisphere Hat",
+      "url": "https://www.aimeleondore.com/products/corduroy-unisphere-hat-1",
+      "price": "SOLD OUT",
+      "product_id": "7359016239201",
+      "color": "Rosin",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Waffle Crewneck Sweater",
+      "url": "https://www.aimeleondore.com/products/waffle-crewneck-sweater-2",
+      "price": "$295",
+      "product_id": "7349724282977",
+      "color": "Pine Grove",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Waffle Crewneck Sweater",
+      "url": "https://www.aimeleondore.com/products/waffle-crewneck-sweater",
+      "price": "$295",
+      "product_id": "7349724151905",
+      "color": "NAVY BLAZER",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Waffle Crewneck Sweater",
+      "url": "https://www.aimeleondore.com/products/waffle-crewneck-sweater-1",
+      "price": "$295",
+      "product_id": "7349724217441",
+      "color": "Coconut Milk",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Relaxed Fit 5-Pocket Denim Pant",
+      "url": "https://www.aimeleondore.com/products/relaxed-fit-5-pocket-denim-pant",
+      "price": "$295",
+      "product_id": "7349725757537",
+      "color": "LIGHT WASH",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Relaxed Fit 5-Pocket Denim Pant",
+      "url": "https://www.aimeleondore.com/products/relaxed-fit-5-pocket-denim-pant-2",
+      "price": "$295",
+      "product_id": "7349725823073",
+      "color": "MID WASH",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "Relaxed Fit 5-Pocket Denim Pant",
+      "url": "https://www.aimeleondore.com/products/relaxed-fit-5-pocket-denim-pant-1",
+      "price": "$295",
+      "product_id": "7349725790305",
+      "color": "Light Grey Wash",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "New Balance MiUSA 992",
+      "url": "https://www.aimeleondore.com/products/new-balance-miusa-993",
+      "price": "$200",
+      "product_id": "7349719498849",
+      "color": "OLIVE",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    },
+    {
+      "name": "New Balance Made in USA 990v6",
+      "url": "https://www.aimeleondore.com/products/new-balance-made-in-usa-990v6-1",
+      "price": "$200",
+      "product_id": "7285220245601",
+      "color": "White",
+      "is_new": false,
+      "badge": "N/A",
+      "image": "N/A"
+    }
+  ]
+}
