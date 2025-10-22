@@ -1,0 +1,18 @@
+{
+  "url": "https://ninetyfour.world/collections/t-shirts",
+  "platform": "Shopify",
+  "selectors_tested": [
+    ".product-item",
+    ".grid-product",
+    ".collection-grid__item",
+    ".product-card",
+    ".product-container",
+    "a.plp-product",
+    ".product-tile",
+    ".grid__item",
+    ".product",
+    ".item"
+  ],
+  "best_selector": ".product-item",
+  "num_products": 10
+}

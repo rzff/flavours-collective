@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """
-Hybrid Webshop Scraper v3
-Qwen2.5-Coder proposes multiple product selectors → test each with BeautifulSoup.
-Stores raw HTML, all tested selectors, successful one, and detected e-commerce platform.
+Hybrid Webshop Scraper v4
+- Iterative selector discovery via Qwen 2.5 Coder
+- Extracts products using BeautifulSoup
+- Saves merged products.json for multiple URLs
+- Stores raw HTML + metadata for debugging
 """
 
 import os
@@ -14,7 +16,7 @@ import aiohttp
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
-from typing import List, Dict, Optional
+from typing import List, Dict
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 
 DATA_DIR = "scraper_data"
@@ -36,7 +38,7 @@ async def local_llm_call(prompt: str, model: str = "qwen2.5-coder:14b") -> str:
 
 
 # ---------------------------------------------------------------------
-# E-commerce platform detection
+# Platform detection
 # ---------------------------------------------------------------------
 def infer_platform(html: str, url: str) -> str:
     html_lower = html.lower()
@@ -59,43 +61,6 @@ def infer_platform(html: str, url: str) -> str:
     elif "webflow" in html_lower:
         return "Webflow"
     return "Custom"
-
-
-# ---------------------------------------------------------------------
-# Ask Qwen for product selectors (plural)
-# ---------------------------------------------------------------------
-async def find_product_selectors(html: str, platform: str) -> List[str]:
-    """
-    Ask Qwen for a JSON list of potential CSS selectors for product containers.
-    Returns list like ["a.plp-product", ".product-card", ".grid__item"].
-    """
-    prompt = f"""
-You are an expert in HTML structure analysis for e-commerce.
-The following HTML is from a {platform} store.
-
-Identify multiple possible CSS selectors that likely correspond
-to individual product containers in a product listing page.
-
-Rules:
-- Return **only JSON array** like:
-  ["a.plp-product", ".product-card", ".grid__item"]
-- Do not include explanations or text outside JSON.
-
-HTML (truncated):
-{html[:8000]}
-"""
-    try:
-        response = await local_llm_call(prompt)
-        # Attempt to parse a JSON array from response
-        match = re.search(r"\[.*\]", response, re.DOTALL)
-        if not match:
-            return []
-        arr = json.loads(match.group(0))
-        # Keep only strings and remove duplicates
-        return list({s.strip() for s in arr if isinstance(s, str) and s.strip()})
-    except Exception as e:
-        print("⚠️ Selector identification failed:", e)
-        return []
 
 
 # ---------------------------------------------------------------------
@@ -158,13 +123,92 @@ def extract_products_bs4(html: str, selector: str, base_url: str) -> List[Dict]:
 
 
 # ---------------------------------------------------------------------
+# Iterative selector discovery
+# ---------------------------------------------------------------------
+async def find_valid_selector(
+    html: str, platform: str, base_url: str, max_attempts: int = 5
+):
+    """
+    Ask Qwen iteratively for product container selectors.
+    Returns (best_selector, tested_selectors, extracted_products)
+    """
+    tested_selectors = []
+    best_selector = None
+    best_products = []
+
+    fallback_selectors = [
+        "a.plp-product",
+        ".product-card",
+        ".product-tile",
+        ".grid__item",
+        ".product-item",
+        ".product",
+        ".item",
+    ]
+
+    for attempt in range(1, max_attempts + 1):
+        context = (
+            f"Previously tested selectors (0 products): {tested_selectors}"
+            if tested_selectors
+            else ""
+        )
+        prompt = f"""
+You are an expert in e-commerce HTML parsing.
+HTML snippet (truncated): {html[:7000]}
+Platform: {platform}
+{context}
+
+Return a JSON array of up to 5 potential CSS selectors for product containers.
+Do not repeat selectors already tested.
+Return ONLY the JSON array.
+"""
+        try:
+            response = await local_llm_call(prompt)
+            match = re.search(r"\[.*\]", response, re.DOTALL)
+            selectors = json.loads(match.group(0)) if match else []
+            selectors = [
+                s.strip() for s in selectors if isinstance(s, str) and s.strip()
+            ]
+        except Exception:
+            selectors = []
+
+        selectors = list(dict.fromkeys(selectors + fallback_selectors))  # unique
+        print(f"🧩 Attempt {attempt} — trying selectors: {selectors}")
+
+        for sel in selectors:
+            if sel in tested_selectors:
+                continue
+            tested_selectors.append(sel)
+            products = extract_products_bs4(html, sel, base_url)
+            if len(products) > len(best_products):
+                best_products = products
+                best_selector = sel
+
+        if best_products:
+            print(f"✅ Found products with selector: {best_selector}")
+            break
+        else:
+            print("❌ No products found this round, retrying...")
+
+    if not best_products:
+        for sel in fallback_selectors:
+            products = extract_products_bs4(html, sel, base_url)
+            if products:
+                best_selector = sel
+                best_products = products
+                break
+
+    return best_selector, tested_selectors, best_products
+
+
+# ---------------------------------------------------------------------
 # Unified scrape flow
 # ---------------------------------------------------------------------
 async def scrape(url: str, headless: bool = True) -> Dict:
     """Scrape a collection page dynamically using Qwen + BS4."""
     print(f"📡 Fetching: {url}")
 
-    # --- Step 1: Download HTML ---
+    # Step 1: Download HTML
     try:
         resp = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=20)
         resp.raise_for_status()
@@ -182,46 +226,20 @@ async def scrape(url: str, headless: bool = True) -> Dict:
         print("❌ No HTML content found.")
         return {"url": url, "products": []}
 
-    # --- Step 2: Detect platform ---
+    # Step 2: Detect platform
     platform = infer_platform(html, url)
     print(f"🛒 Detected platform: {platform}")
 
-    # --- Step 3: Ask Qwen for selectors ---
-    print("🔍 Asking Qwen for product selectors …")
-    selectors = await find_product_selectors(html, platform)
-
-    # --- Step 4: Fallback selectors if LLM fails ---
-    fallback_selectors = [
-        "a.plp-product",
-        ".product-card",
-        ".product-tile",
-        ".grid__item",
-        ".product-item",
-        ".product",
-        ".item",
-        ".collection-product",
-    ]
-    selectors = selectors or fallback_selectors
-
-    print(f"🧩 Testing {len(selectors)} potential selectors …")
-
-    # --- Step 5: Try each selector until one works well ---
-    best_selector = None
-    best_products = []
-
-    for sel in selectors:
-        products = extract_products_bs4(html, sel, url)
-        if len(products) >= len(best_products):
-            best_products = products
-            best_selector = sel
-
+    # Step 3: Iterative selector discovery
+    best_selector, tested_selectors, best_products = await find_valid_selector(
+        html, platform, url, max_attempts=5
+    )
     if not best_products:
         print("😥 No products found for any selector.")
         return {"url": url, "products": []}
-
     print(f"✅ Best selector: {best_selector} → {len(best_products)} products")
 
-    # --- Step 6: Store raw HTML + metadata ---
+    # Step 4: Store raw HTML + metadata
     domain = re.sub(r"[^a-zA-Z0-9]", "_", url.split("//")[-1])
     with open(f"{DATA_DIR}/{domain}_raw.html", "w", encoding="utf-8") as f:
         f.write(html)
@@ -230,7 +248,7 @@ async def scrape(url: str, headless: bool = True) -> Dict:
             {
                 "url": url,
                 "platform": platform,
-                "selectors_tested": selectors,
+                "selectors_tested": tested_selectors,
                 "best_selector": best_selector,
                 "num_products": len(best_products),
             },
@@ -250,34 +268,44 @@ async def scrape(url: str, headless: bool = True) -> Dict:
 # CLI Entrypoint
 # ---------------------------------------------------------------------
 async def main():
-    url = "https://www.aimeleondore.com/collections/shop-all"
+    urls = [
+        "https://www.nike.com/nl/en/w/womens-shoes-5e1x6zy7ok",
+        # Add more URLs here
+    ]
     start = time.time()
 
-    result = await scrape(url, headless=False)
-    elapsed = time.time() - start
-
-    products = result.get("products", [])
-    if products:
-        out_path = f"{DATA_DIR}/products.json"
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(result, f, indent=2, ensure_ascii=False)
-
-        print(f"\n✅ Extracted {len(products)} products from {result['platform']}")
-        print(f"💾 Saved structured data to {out_path}")
-        print(f"💾 Raw HTML + metadata saved in {DATA_DIR}/")
-
-        # Markdown preview
-        headers = products[0].keys()
-        table = "| " + " | ".join(headers) + " |\n"
-        table += "| " + " | ".join([":---" for _ in headers]) + " |\n"
-        for p in products[:10]:
-            table += "| " + " | ".join(str(p.get(h, "")) for h in headers) + " |\n"
-        print("\n🪄 Markdown Preview (top 10):\n")
-        print(table)
+    merged_products_path = f"{DATA_DIR}/products.json"
+    if os.path.exists(merged_products_path):
+        with open(merged_products_path, "r", encoding="utf-8") as f:
+            all_data = json.load(f)
+            # If somehow it’s a dict or string, convert to list
+            if isinstance(all_data, dict):
+                all_data = [all_data]
+            elif isinstance(all_data, str):
+                try:
+                    all_data = json.loads(all_data)
+                    if isinstance(all_data, dict):
+                        all_data = [all_data]
+                except Exception:
+                    all_data = []
     else:
-        print("😥 Nothing found.")
+        all_data = []
 
-    print(f"⏱️ Runtime: {elapsed:.1f}s")
+    for url in urls:
+        result = await scrape(url, headless=False)
+        products = result.get("products", [])
+        if products:
+            # Remove old entry for same URL
+            all_data = [s for s in all_data if s.get("url") != result["url"]]
+            all_data.append(result)
+            # Save merged data
+            with open(merged_products_path, "w", encoding="utf-8") as f:
+                json.dump(all_data, f, indent=2, ensure_ascii=False)
+            print(f"💾 Saved {len(products)} products from {url}")
+        else:
+            print(f"😥 No products found for {url}")
+
+    print(f"⏱️ Total runtime: {time.time() - start:.1f}s")
 
 
 if __name__ == "__main__":

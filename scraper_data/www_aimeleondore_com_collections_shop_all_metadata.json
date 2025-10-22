@@ -2,9 +2,16 @@
   "url": "https://www.aimeleondore.com/collections/shop-all",
   "platform": "Shopify",
   "selectors_tested": [
-    ".grid__item",
+    ".product",
+    ".collection-grid-item",
+    ".product-card",
+    ".grid-product",
+    ".product-block",
     "a.plp-product",
-    ".product-card"
+    ".product-tile",
+    ".grid__item",
+    ".product-item",
+    ".item"
   ],
   "best_selector": "a.plp-product",
   "num_products": 192
