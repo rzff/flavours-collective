@@ -1,0 +1,21 @@
+{
+  "url": "https://www.nike.com/nl/en/w/womens-shoes-5e1x6zy7ok",
+  "platform": "Custom",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    ".product-container",
+    ".grid-item.product",
+    ".item-list .item",
+    ".product-grid__item",
+    ".products-list .product-card",
+    "a.plp-product",
+    ".product-card",
+    ".product-tile",
+    ".grid__item",
+    ".product-item",
+    ".product",
+    ".item"
+  ],
+  "best_selector": ".product-card",
+  "num_products": 24
+}

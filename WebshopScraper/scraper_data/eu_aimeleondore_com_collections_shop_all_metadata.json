@@ -1,0 +1,12 @@
+{
+  "url": "https://eu.aimeleondore.com/collections/shop-all",
+  "platform": "Shopify",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    "a.plp-product"
+  ],
+  "best_selector": "a.plp-product",
+  "num_products": 818,
+  "scrape_time_s": 22.789178133010864,
+  "was_cached": true
+}

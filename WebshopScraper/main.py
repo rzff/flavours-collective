@@ -269,7 +269,7 @@ async def scrape(url: str, headless: bool = True) -> Dict:
 # ---------------------------------------------------------------------
 async def main():
     urls = [
-        "https://www.nike.com/nl/en/w/womens-shoes-5e1x6zy7ok",
+        "https://www.apcstore.com/collections/all",
         # Add more URLs here
     ]
     start = time.time()

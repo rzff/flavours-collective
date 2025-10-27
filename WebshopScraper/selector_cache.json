@@ -1,0 +1,6 @@
+{
+  "eu.aimeleondore.com": {
+    "selector": "a.plp-product",
+    "page_type": "infinite_scroll"
+  }
+}
