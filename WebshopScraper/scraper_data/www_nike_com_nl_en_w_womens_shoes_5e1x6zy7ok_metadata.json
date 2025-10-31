@@ -3,19 +3,11 @@
   "platform": "Custom",
   "page_type": "infinite_scroll",
   "selectors_tested": [
-    ".product-container",
-    ".grid-item.product",
-    ".item-list .item",
-    ".product-grid__item",
-    ".products-list .product-card",
-    "a.plp-product",
-    ".product-card",
-    ".product-tile",
-    ".grid__item",
-    ".product-item",
-    ".product",
-    ".item"
+    ".product-card"
   ],
   "best_selector": ".product-card",
-  "num_products": 24
+  "field_selectors": null,
+  "num_products": 0,
+  "scrape_time_s": 62.9126410484314,
+  "was_cached": true
 }

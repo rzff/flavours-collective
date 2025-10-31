@@ -3,6 +3,7 @@
 Hybrid Adaptive Webshop Scraper v8 (Cache-Aware)
 - `scrape` function now accepts optional cached_selector and cached_page_type
   to bypass LLM calls.
+- Enhanced product extraction with LLM-detected field selectors
 """
 
 import os
@@ -17,8 +18,9 @@ from typing import List, Dict, Set
 
 from scraper_utils import (
     infer_platform,
-    extract_products_bs4,
+    extract_products_bs4_enhanced,  # Updated to enhanced version
     find_valid_selector,
+    detect_field_selectors,  # New import
 )
 
 # We only need the LLM-based detector from HtmlParser
@@ -59,9 +61,6 @@ async def fetch_simple_playwright_html(url: str) -> str:
     return html
 
 
-# ---------------------------------------------------------------------
-# Scroll function (unchanged)
-# ---------------------------------------------------------------------
 # ---------------------------------------------------------------------
 # REFACTORED: Scroll function (now more robust)
 # ---------------------------------------------------------------------
@@ -149,12 +148,38 @@ async def fetch_html_with_scroll(
 
 
 # ---------------------------------------------------------------------
-# REFACTORED: Unified scrape flow (now accepts cache)
+# Enhanced product extraction with field selector caching
+# ---------------------------------------------------------------------
+async def extract_products_with_field_selectors(
+    html: str,
+    selector: str,
+    base_url: str,
+    platform: str,
+    cached_field_selectors: Dict[str, List[str]] | None = None,
+) -> List[Dict]:
+    """
+    Extract products using LLM-detected field selectors.
+    Can use cached field selectors for better performance.
+    """
+    if cached_field_selectors:
+        print(f"⚡ Using cached field selectors")
+        # Use the enhanced extraction with cached field selectors
+        return await extract_products_bs4_enhanced(
+            html, selector, base_url, platform, cached_field_selectors
+        )
+    else:
+        print("🔍 Detecting field selectors with LLM...")
+        return await extract_products_bs4_enhanced(html, selector, base_url, platform)
+
+
+# ---------------------------------------------------------------------
+# REFACTORED: Unified scrape flow (now with enhanced field extraction)
 # ---------------------------------------------------------------------
 async def scrape(
     url: str,
     cached_selector: str | None = None,
     cached_page_type: str | None = None,
+    cached_field_selectors: Dict[str, List[str]] | None = None,  # New cache parameter
     headless: bool = True,
 ) -> Dict:
     print(f"📡 Fetching: {url}")
@@ -200,7 +225,9 @@ async def scrape(
         print(f"⚡ Cache HIT for Selector: {cached_selector}")
         best_selector = cached_selector
         tested_selectors = [cached_selector]
-        products = extract_products_bs4(html, best_selector, url)
+        products = await extract_products_with_field_selectors(
+            html, best_selector, url, platform, cached_field_selectors
+        )
     else:
         print("🐌 LLM call for Selector...")
         best_selector, tested_selectors, products = await find_valid_selector(
@@ -212,9 +239,10 @@ async def scrape(
         return {
             "url": url,
             "platform": platform,
-            "page_type": page_type,  # Return page_type even if selector fails
+            "page_type": page_type,
             "selector": None,
             "products": [],
+            "field_selectors": None,  # New field
         }
     print(f"✅ Initial selector: {best_selector} → {len(products)} products")
 
@@ -227,10 +255,22 @@ async def scrape(
         print("✅ Page type is static, no scrolling needed.")
 
     # Step 7: Final extraction from fully-loaded HTML
-    final_products = extract_products_bs4(final_html, best_selector, url)
+    final_products = await extract_products_with_field_selectors(
+        final_html, best_selector, url, platform, cached_field_selectors
+    )
     print(f"🏁 Final extraction: {len(final_products)} products found.")
 
-    # Step 8: Store raw HTML + metadata
+    # Step 8: Detect field selectors if not cached (for future cache use)
+    field_selectors = cached_field_selectors
+    if not field_selectors and final_products:
+        print("🔍 Detecting field selectors for caching...")
+        # Use a small sample of HTML to detect field selectors
+        sample_html = final_html[:10000]  # Use first 10k chars for efficiency
+        field_selectors = await detect_field_selectors(
+            sample_html, platform, best_selector
+        )
+
+    # Step 9: Store raw HTML + metadata
     domain = re.sub(r"[^a-zA-Z0-9]", "_", url.split("//")[-1])
     with open(f"{DATA_DIR}/{domain}_raw.html", "w", encoding="utf-8") as f:
         f.write(final_html)
@@ -242,6 +282,7 @@ async def scrape(
                 "page_type": page_type,
                 "selectors_tested": tested_selectors,
                 "best_selector": best_selector,
+                "field_selectors": field_selectors,  # New field
                 "num_products": len(final_products),
                 "scrape_time_s": time.time() - start_time,
                 "was_cached": bool(cached_selector),
@@ -256,12 +297,13 @@ async def scrape(
         "platform": platform,
         "page_type": page_type,
         "selector": best_selector,
+        "field_selectors": field_selectors,  # New field
         "products": final_products,
     }
 
 
 # ---------------------------------------------------------------------
-# CLI Entrypoint (Unchanged, but will always be a "Cache Miss")
+# CLI Entrypoint (Updated to handle new return fields)
 # ---------------------------------------------------------------------
 async def main():
     urls = [
@@ -269,10 +311,6 @@ async def main():
         "https://ninetyfour.world/collections/t-shirts",
     ]
     start = time.time()
-
-    # ... (rest of main function is unchanged)
-    # Note: Running this directly will NOT use the API's cache.
-    # It will always run the "cache miss" logic.
 
     merged_products_path = f"{DATA_DIR}/products.json"
     if os.path.exists(merged_products_path):
@@ -300,6 +338,16 @@ async def main():
             with open(merged_products_path, "w", encoding="utf-8") as f:
                 json.dump(all_data, f, indent=2, ensure_ascii=False)
             print(f"💾 Saved {len(products)} products from {url}")
+
+            # Print sample product with enhanced fields
+            if products:
+                sample = products[0]
+                print(f"📦 Sample product: {sample.get('name', 'N/A')}")
+                print(f"   💰 Price: {sample.get('price', 'N/A')}")
+                print(f"   🖼️ Image: {sample.get('image_url', 'N/A')[:50]}...")
+                print(f"   📝 Description: {sample.get('description', 'N/A')[:50]}...")
+                print(f"   🔗 URL: {sample.get('url', 'N/A')}")
+                print(f"   📦 In Stock: {sample.get('in_stock', 'N/A')}")
         else:
             print(f"😥 No products found for {url}")
 

@@ -3,10 +3,44 @@
   "platform": "Shopify",
   "page_type": "infinite_scroll",
   "selectors_tested": [
+    ".product-grid__item",
+    ".collection-item",
+    ".product-card",
+    ".product-listing",
+    ".grid-product",
+    "a.product-item",
+    ".product-tile",
+    ".grid__item",
+    ".product-item",
+    ".product",
+    ".item",
+    "li.product",
     "a.plp-product"
   ],
   "best_selector": "a.plp-product",
-  "num_products": 818,
-  "scrape_time_s": 22.789178133010864,
-  "was_cached": true
+  "field_selectors": {
+    "name": [
+      "h1.product-name",
+      "a.plp-product h2.title"
+    ],
+    "price": [
+      "span.price",
+      "div.money"
+    ],
+    "image": [
+      "img.product-image",
+      "a.plp-product img"
+    ],
+    "description": [
+      "p.product-desc",
+      "div.description"
+    ],
+    "url": [
+      "a.plp-product",
+      "a.plp-product[href]"
+    ]
+  },
+  "num_products": 926,
+  "scrape_time_s": 122.15402388572693,
+  "was_cached": false
 }

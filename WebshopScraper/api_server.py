@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-FastAPI server with a persistent cache for selectors and page types.
+FastAPI server with a persistent cache for selectors, page types, and field selectors.
 
 - POST /scrape {"url": "..."}
   - Checks cache for the URL's domain.
-  - Cache Hit: Runs scrape with the cached selector (fast).
+  - Cache Hit: Runs scrape with the cached selector and field selectors (fast).
   - Cache Miss: Runs full LLM-based scrape (slow) and saves the result to the cache.
 """
 
@@ -13,9 +13,10 @@ import json
 import os
 import aiofiles
 import asyncio
+import time
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, HttpUrl
-from typing import Dict, Any
+from typing import Dict, Any, List, Optional
 from urllib.parse import urlparse
 
 # --- Import the core scraping logic ---
@@ -28,7 +29,7 @@ except ImportError:
 # --- Cache Setup ---
 CACHE_FILE = "selector_cache.json"
 # In-memory cache, loaded from file
-site_cache: Dict[str, Dict[str, str]] = {}
+site_cache: Dict[str, Dict[str, Any]] = {}
 # A lock to prevent race conditions when writing to the cache file
 cache_lock = asyncio.Lock()
 
@@ -74,8 +75,8 @@ async def save_cache():
 # --- API Setup ---
 app = FastAPI(
     title="Adaptive Product Search API",
-    description="A cache-aware API to scrape product information.",
-    version="1.2.0",
+    description="A cache-aware API to scrape product information with enhanced field extraction.",
+    version="2.0.0",  # Bumped version for new features
 )
 
 
@@ -86,6 +87,17 @@ async def on_startup():
 
 
 # --- Request and Response Models ---
+class Product(BaseModel):
+    """Enhanced product model with all new fields."""
+
+    name: str
+    url: str
+    price: Optional[str] = None
+    image_url: Optional[str] = None
+    description: Optional[str] = None
+    in_stock: Optional[bool] = None
+
+
 class ScrapeRequest(BaseModel):
     """The JSON request body for the /scrape endpoint."""
 
@@ -93,21 +105,22 @@ class ScrapeRequest(BaseModel):
 
 
 class ScrapeResponse(BaseModel):
-    """The JSON response body from the /scrape endpoint."""
+    """The JSON response body from the /scrape endpoint with all new fields."""
 
     url: str
     platform: str
     page_type: str
-    selector: str | None
-    products: list
-    cache_status: str  # Added for clarity
+    selector: Optional[str] = None
+    field_selectors: Optional[Dict[str, List[str]]] = None  # New field
+    products: List[Product]
+    cache_status: str
 
 
 # --- API Endpoint ---
-@app.post("/scrape")
+@app.post("/scrape", response_model=ScrapeResponse)
 async def run_scrape(request: ScrapeRequest) -> Dict[str, Any]:
     """
-    Asynchronously run the web scraper, using a cache for selectors and page types.
+    Asynchronously run the web scraper, using a cache for selectors, page types, and field selectors.
     """
     url_str = str(request.url)
     domain_key = get_domain_key(url_str)
@@ -121,13 +134,18 @@ async def run_scrape(request: ScrapeRequest) -> Dict[str, Any]:
         if cached_data:
             # --- CACHE HIT ---
             cache_status = "HIT"
+            print(f"⚡ Cache HIT for {domain_key}.")
+            print(f"   Selector: {cached_data.get('selector')}")
+            print(f"   Page Type: {cached_data.get('page_type')}")
             print(
-                f"⚡ Cache HIT for {domain_key}. Using selector: {cached_data.get('selector')}"
+                f"   Field Selectors: {list(cached_data.get('field_selectors', {}).keys())}"
             )
+
             result = await scrape(
                 url_str,
                 cached_selector=cached_data.get("selector"),
                 cached_page_type=cached_data.get("page_type"),
+                cached_field_selectors=cached_data.get("field_selectors"),
                 headless=True,
             )
         else:
@@ -141,6 +159,8 @@ async def run_scrape(request: ScrapeRequest) -> Dict[str, Any]:
                 new_cache_entry = {
                     "selector": result["selector"],
                     "page_type": result["page_type"],
+                    "field_selectors": result.get("field_selectors"),  # New field
+                    "created_at": time.time(),  # For future TTL implementation
                 }
                 site_cache[domain_key] = new_cache_entry
                 print(f"💾 Saving new cache entry for {domain_key}.")
@@ -150,6 +170,16 @@ async def run_scrape(request: ScrapeRequest) -> Dict[str, Any]:
         print(
             f"API: Scraping for {url_str} finished. Found {num_products} products (Cache: {cache_status})."
         )
+
+        # Print sample product info for debugging
+        if num_products > 0:
+            sample = result["products"][0]
+            print(f"📦 Sample product fields:")
+            print(f"   Name: {sample.get('name', 'N/A')}")
+            print(f"   Price: {sample.get('price', 'N/A')}")
+            print(f"   Image: {'Yes' if sample.get('image_url') else 'No'}")
+            print(f"   Description: {'Yes' if sample.get('description') else 'No'}")
+            print(f"   In Stock: {sample.get('in_stock', 'N/A')}")
 
         result["cache_status"] = cache_status
         return result
@@ -162,7 +192,44 @@ async def run_scrape(request: ScrapeRequest) -> Dict[str, Any]:
         raise HTTPException(status_code=500, detail=f"An internal error occurred: {e}")
 
 
+# --- Additional endpoints for cache management ---
+@app.get("/cache/status")
+async def get_cache_status():
+    """Get cache statistics and status."""
+    return {
+        "total_domains": len(site_cache),
+        "domains": list(site_cache.keys()),
+        "cache_file": CACHE_FILE,
+        "cache_file_exists": os.path.exists(CACHE_FILE),
+    }
+
+
+@app.delete("/cache/{domain}")
+async def clear_cache_domain(domain: str):
+    """Clear cache for a specific domain."""
+    if domain in site_cache:
+        del site_cache[domain]
+        await save_cache()
+        return {"message": f"Cache cleared for domain: {domain}"}
+    else:
+        raise HTTPException(
+            status_code=404, detail=f"Domain not found in cache: {domain}"
+        )
+
+
+@app.delete("/cache")
+async def clear_all_cache():
+    """Clear all cache entries."""
+    global site_cache
+    site_cache = {}
+    await save_cache()
+    return {"message": "All cache entries cleared"}
+
+
 # --- Run the server ---
 if __name__ == "__main__":
     print("Starting FastAPI server on http://0.0.0.0:8000")
+    print(
+        "Enhanced version with field selector caching and improved product extraction"
+    )
     uvicorn.run("api_server:app", host="0.0.0.0", port=8000, reload=True)
