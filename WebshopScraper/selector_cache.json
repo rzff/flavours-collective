@@ -35,5 +35,76 @@
       ]
     },
     "created_at": 1761943443.717178
+  },
+  "www.aimeleondore.com": {
+    "selector": "a.plp-product",
+    "page_type": "infinite_scroll",
+    "field_selectors": {
+      "name": [
+        ".product-card .h1",
+        ".product-card .h2",
+        ".product-card .h3",
+        ".product-card .h4",
+        ".product-card [class*='title']",
+        ".product-card [class*='name']",
+        ".product-card [class*='product-name']"
+      ],
+      "price": [
+        ".product-card [class*='price']",
+        ".product-card [class*='cost']",
+        ".product-card [class*='money']",
+        ".product-card [class*='currency']"
+      ],
+      "image": [
+        ".product-card img[class*='image']",
+        ".product-card img[class*='img']",
+        ".product-card img[class*='product-image']"
+      ],
+      "description": [
+        ".product-card p[class*='desc']",
+        ".product-card p[class*='description']",
+        ".product-card p[class*='product-desc']"
+      ],
+      "url": [
+        ".product-card a[href]",
+        ".product-card [class*='link']",
+        ".product-card [class*='product-link']"
+      ]
+    },
+    "created_at": 1762002581.9924679
+  },
+  "ninetyfour.world": {
+    "selector": ".product-item",
+    "page_type": "infinite_scroll",
+    "field_selectors": {
+      "name": [
+        ".product-item h1",
+        ".product-item .title",
+        ".product-item .name",
+        ".product-item .product-name"
+      ],
+      "price": [
+        ".product-item .price",
+        ".product-item .cost",
+        ".product-item .money",
+        ".product-item .currency"
+      ],
+      "image": [
+        ".product-item img.image",
+        ".product-item img.img",
+        ".product-item img.product-image"
+      ],
+      "description": [
+        ".product-item p.desc",
+        ".product-item p.description",
+        ".product-item p.product-desc"
+      ],
+      "url": [
+        ".product-item a.link",
+        ".product-item a.product-link",
+        ".product-item a[href]"
+      ]
+    },
+    "created_at": 1762003350.885958
   }
 }
