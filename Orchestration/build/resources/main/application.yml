@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: scraping-orchestration
+  cache:
+    type: simple
+    cache-names: domainSelectors, platformCache, fieldSelectors
+
+python:
+  service:
+    base-url: http://localhost:8000
+    # Your Python service has these endpoints:
+    scrape-url: ${python.service.base-url}/scrape
+    cache-url: ${python.service.base-url}/cache
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,info
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    com.example.demo: DEBUG

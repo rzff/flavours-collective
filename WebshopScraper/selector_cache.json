@@ -4,26 +4,36 @@
     "page_type": "infinite_scroll",
     "field_selectors": {
       "name": [
-        "h1.product-name",
-        "a.plp-product h2.title"
+        ".plp-product h1",
+        ".plp-product h2",
+        ".plp-product h3",
+        ".plp-product h4",
+        ".plp-product .title",
+        ".plp-product .name",
+        ".plp-product .product-name"
       ],
       "price": [
-        "span.price",
-        "div.money"
+        ".plp-product .price",
+        ".plp-product .cost",
+        ".plp-product .money",
+        ".plp-product .currency"
       ],
       "image": [
-        "img.product-image",
-        "a.plp-product img"
+        ".plp-product img.image",
+        ".plp-product img.img",
+        ".plp-product img.product-image"
       ],
       "description": [
-        "p.product-desc",
-        "div.description"
+        ".plp-product p.desc",
+        ".plp-product p.description",
+        ".plp-product p.product-desc"
       ],
       "url": [
-        "a.plp-product",
-        "a.plp-product[href]"
+        ".plp-product a.link",
+        ".plp-product a.product-link",
+        ".plp-product a[href]"
       ]
     },
-    "created_at": 1761943104.748649
+    "created_at": 1761943443.717178
   }
 }

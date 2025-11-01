@@ -274,6 +274,22 @@ def extract_field_value(
         else BeautifulSoup(str(element), "html.parser")
     )
 
+    # Special case: if the element itself is a link and we're looking for URL
+    if field_type == "url" and soup.name == "a":
+        href = soup.get("href")
+        if href:
+            full_url = urljoin(base_url, href)
+            print(f"   🔗 Found URL from container href: {full_url}")
+            return full_url
+
+    # Special case: if the element itself is an image and we're looking for image URL
+    if field_type == "image" and soup.name == "img":
+        src = soup.get("src") or soup.get("data-src") or soup.get("data-lazy-src")
+        if src:
+            full_url = urljoin(base_url, src)
+            print(f"   🖼️ Found image from container src: {full_url}")
+            return full_url
+
     for selector in selectors:
         try:
             found = soup.select_one(selector)
@@ -281,11 +297,22 @@ def extract_field_value(
                 if field_type == "text":
                     text = found.get_text(strip=True)
                     if text and text not in ["", "null", "undefined"]:
+                        print(
+                            f"   ✅ Found text with selector '{selector}': '{text[:50]}...'"
+                        )
                         return text
+                    else:
+                        print(f"   ⚠️ Selector '{selector}' found but text empty")
+
                 elif field_type == "url":
                     href = found.get("href")
                     if href:
-                        return urljoin(base_url, href)
+                        full_url = urljoin(base_url, href)
+                        print(f"   ✅ Found URL with selector '{selector}': {full_url}")
+                        return full_url
+                    else:
+                        print(f"   ⚠️ Selector '{selector}' found but no href attribute")
+
                 elif field_type == "image":
                     src = (
                         found.get("src")
@@ -293,16 +320,67 @@ def extract_field_value(
                         or found.get("data-lazy-src")
                     )
                     if src:
-                        return urljoin(base_url, src)
+                        full_url = urljoin(base_url, src)
+                        print(
+                            f"   ✅ Found image with selector '{selector}': {full_url}"
+                        )
+                        return full_url
+                    else:
+                        print(f"   ⚠️ Selector '{selector}' found but no src attribute")
+
                 elif field_type == "price":
                     text = found.get_text(strip=True)
-                    # Clean price text
-                    price_match = re.search(r"[\d.,]+", text)
+                    # Clean price text - look for currency symbols and numbers
+                    price_match = re.search(r"[\$£€]?[\d,]+\.?\d*", text)
                     if price_match:
-                        return price_match.group(0)
-        except Exception:
+                        price = price_match.group(0)
+                        print(
+                            f"   ✅ Found price with selector '{selector}': '{price}'"
+                        )
+                        return price
+                    else:
+                        print(
+                            f"   ⚠️ Selector '{selector}' found but no price pattern in: '{text}'"
+                        )
+
+            else:
+                print(f"   ❌ Selector '{selector}' not found")
+
+        except Exception as e:
+            print(f"   ⚠️ Error with selector '{selector}': {e}")
             continue
 
+    # Final fallbacks for URL field
+    if field_type == "url":
+        # Try to find any link within the container
+        any_link = soup.find("a")
+        if any_link and any_link.get("href"):
+            full_url = urljoin(base_url, any_link.get("href"))
+            print(f"   🔗 Fallback URL found: {full_url}")
+            return full_url
+
+        # If container has href itself (should be caught by special case above, but just in case)
+        if soup.get("href"):
+            full_url = urljoin(base_url, soup.get("href"))
+            print(f"   🔗 Fallback URL from container: {full_url}")
+            return full_url
+
+    # Final fallback for image field
+    if field_type == "image":
+        # Try to find any image within the container
+        any_image = soup.find("img")
+        if any_image:
+            src = (
+                any_image.get("src")
+                or any_image.get("data-src")
+                or any_image.get("data-lazy-src")
+            )
+            if src:
+                full_url = urljoin(base_url, src)
+                print(f"   🖼️ Fallback image found: {full_url}")
+                return full_url
+
+    print(f"   ❌ No {field_type} found with any selector")
     return ""
 
 
