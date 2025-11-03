@@ -1,61 +1,108 @@
 {
-  "ninetyfour.world": {
-    "selector": "[data-js-product-item]",
+  "www.menyardhomme.com": {
+    "selector": ".product-item__info",
     "page_type": "infinite_scroll",
     "field_selectors": {
       "name": [
-        ".product-card .product-name",
-        ".product-title"
+        ".product-item__info h1",
+        ".product-item__info h2",
+        ".product-item__info .title",
+        ".product-item__info .name",
+        ".product-item__info .product-name"
       ],
       "price": [
-        ".product-card .money",
-        ".product-price"
+        ".product-item__info .price",
+        ".product-item__info .cost",
+        ".product-item__info .money",
+        ".product-item__info .currency"
       ],
       "image": [
-        ".product-card img[src*='product']",
-        ".product-image"
+        ".product-item__info img.image",
+        ".product-item__info img.img",
+        ".product-item__info .product-image"
       ],
       "description": [
-        ".product-card p.product-desc",
-        ".product-description"
+        ".product-item__info p.desc",
+        ".product-item__info p.description",
+        ".product-item__info .product-desc"
       ],
       "url": [
-        ".product-card a[href*='products']",
-        ".product-link"
+        ".product-item__info a.link",
+        ".product-item__info a.product-link",
+        ".product-item__info[href]"
       ]
     },
-    "created_at": 1762170852.880893
+    "created_at": 1762175330.056702
   },
   "www.nike.com": {
-    "selector": "[data-product-position]",
+    "selector": ".css-1gk6hs6",
+    "page_type": "infinite_scroll",
+    "field_selectors": {
+      "name": [
+        ".css-1gk6hs6 h1",
+        ".css-1gk6hs6 h2",
+        ".css-1gk6hs6 h3",
+        ".css-1gk6hs6 .title",
+        ".css-1gk6hs6 .name",
+        ".css-1gk6hs6 .product-name"
+      ],
+      "price": [
+        ".css-1gk6hs6 .price",
+        ".css-1gk6hs6 .cost",
+        ".css-1gk6hs6 .money",
+        ".css-1gk6hs6 .currency"
+      ],
+      "image": [
+        ".css-1gk6hs6 img.image",
+        ".css-1gk6hs6 img.img",
+        ".css-1gk6hs6 img.product-image"
+      ],
+      "description": [
+        ".css-1gk6hs6 p.desc",
+        ".css-1gk6hs6 p.description",
+        ".css-1gk6hs6 .product-desc"
+      ],
+      "url": [
+        ".css-1gk6hs6 a.link",
+        ".css-1gk6hs6 a.product-link",
+        ".css-1gk6hs6[href]"
+      ]
+    },
+    "created_at": 1762175468.865854
+  },
+  "www.onitsukatiger.com": {
+    "selector": ".product-item",
     "page_type": "pagination",
     "field_selectors": {
       "name": [
-        ".product-card .product-name",
-        ".title"
+        ".product-item .product-name",
+        ".product-item h1",
+        ".product-item h2",
+        ".product-item h3",
+        ".product-item h4"
       ],
       "price": [
-        ".product-card .price",
-        ".cost",
-        ".money",
-        ".currency"
+        ".product-item .price",
+        ".product-item .cost",
+        ".product-item .money",
+        ".product-item .currency"
       ],
       "image": [
-        ".product-card img.product-image",
-        "img.image",
-        "img.product-image"
+        ".product-item img.image",
+        ".product-item img.img",
+        ".product-item img.product-image"
       ],
       "description": [
-        ".product-card p.product-desc",
-        "p.desc",
-        "p.description"
+        ".product-item p.desc",
+        ".product-item p.description",
+        ".product-item p.product-desc"
       ],
       "url": [
-        ".product-card a.product-link",
-        "a.link",
-        "a[href]"
+        ".product-item a.link",
+        ".product-item a.product-link",
+        ".product-item[href]"
       ]
     },
-    "created_at": 1762170939.238175
+    "created_at": 1762175729.0592792
   }
 }

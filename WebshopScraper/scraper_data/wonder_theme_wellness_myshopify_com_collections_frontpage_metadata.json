@@ -1,0 +1,82 @@
+{
+  "url": "https://wonder-theme-wellness.myshopify.com/collections/frontpage",
+  "platform": "Shopify",
+  "page_type": "pagination",
+  "selectors_tested": [
+    ".social-links",
+    "#Path_10",
+    ".wt-flag-icon--at",
+    ".wt-newsletter__send",
+    ".grid > div",
+    ".price-item",
+    ".hero__img--desktop",
+    ".wt-flag-icon--my",
+    ".rich-text-image",
+    ".f-current",
+    ".color-foreground-",
+    ".icon",
+    ".wt-separator__line",
+    ".wt-options__title",
+    ".video-reels__testimonial",
+    ".wt-separator",
+    ".wt-localization-drawer",
+    ".price-item--lower",
+    ".hero__pic--mobile",
+    ".collection",
+    ".price-item--regular",
+    "#captcha-bootstrap",
+    ".wt-icon",
+    ".svg-icon--soc-twitter",
+    "#ProductSubmitButton-template--25869534396762__product-grid",
+    ".price-item--last",
+    ".svg-icon--volume",
+    ".video-reels__rating__value",
+    "#a11y-refresh-page-message",
+    "#Immunity",
+    "#ProductCount",
+    ".wt-announcement__container",
+    "#Arrow_left",
+    "#pi-discover",
+    ".wt-options__label",
+    ".wt-localization-drawer__tab",
+    ".wt-flag-icon--nz",
+    "article",
+    ".visually-hidden--inline",
+    ".wt-video__sound-toggle",
+    "#root",
+    ".facets",
+    ".wt-localization-drawer__tabs",
+    ".video-reels__container",
+    "#Collagen",
+    ".wt-language-list",
+    "#Stress Relief",
+    "li > div"
+  ],
+  "best_selector": ".collection",
+  "field_selectors": {
+    "name": [
+      ".product-title",
+      ".product-name"
+    ],
+    "price": [
+      ".money-amount",
+      ".product-price"
+    ],
+    "image": [
+      "img.product-image",
+      "picture img",
+      ".product-card img"
+    ],
+    "description": [
+      "p.product-desc",
+      ".product-description"
+    ],
+    "url": [
+      "a[href*='products']",
+      "a.product-link"
+    ]
+  },
+  "num_products": 1,
+  "scrape_time_s": 48.500104904174805,
+  "was_cached": false
+}

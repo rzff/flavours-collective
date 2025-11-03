@@ -1,0 +1,36 @@
+{
+  "url": "https://abelfragrance.com/collections/perfumes",
+  "platform": "Shopify",
+  "page_type": "pagination",
+  "selectors_tested": [
+    ".collection-main__products"
+  ],
+  "best_selector": ".collection-main__products",
+  "field_selectors": {
+    "name": [
+      ".product-card .product-name",
+      ".title"
+    ],
+    "price": [
+      ".price",
+      ".money",
+      ".currency"
+    ],
+    "image": [
+      "img.product-image",
+      "img.image"
+    ],
+    "description": [
+      "p.product-desc",
+      "p.description"
+    ],
+    "url": [
+      "a.product-link",
+      "a[href]",
+      "div.product-card a"
+    ]
+  },
+  "num_products": 1,
+  "scrape_time_s": 6.642731666564941,
+  "was_cached": true
+}

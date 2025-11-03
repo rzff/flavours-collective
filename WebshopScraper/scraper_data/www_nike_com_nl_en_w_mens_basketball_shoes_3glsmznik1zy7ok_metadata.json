@@ -1,0 +1,43 @@
+{
+  "url": "https://www.nike.com/nl/en/w/mens-basketball-shoes-3glsmznik1zy7ok",
+  "platform": "Custom",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    ".css-1gk6hs6"
+  ],
+  "best_selector": ".css-1gk6hs6",
+  "field_selectors": {
+    "name": [
+      ".css-1gk6hs6 h1",
+      ".css-1gk6hs6 h2",
+      ".css-1gk6hs6 h3",
+      ".css-1gk6hs6 .title",
+      ".css-1gk6hs6 .name",
+      ".css-1gk6hs6 .product-name"
+    ],
+    "price": [
+      ".css-1gk6hs6 .price",
+      ".css-1gk6hs6 .cost",
+      ".css-1gk6hs6 .money",
+      ".css-1gk6hs6 .currency"
+    ],
+    "image": [
+      ".css-1gk6hs6 img.image",
+      ".css-1gk6hs6 img.img",
+      ".css-1gk6hs6 img.product-image"
+    ],
+    "description": [
+      ".css-1gk6hs6 p.desc",
+      ".css-1gk6hs6 p.description",
+      ".css-1gk6hs6 .product-desc"
+    ],
+    "url": [
+      ".css-1gk6hs6 a.link",
+      ".css-1gk6hs6 a.product-link",
+      ".css-1gk6hs6[href]"
+    ]
+  },
+  "num_products": 24,
+  "scrape_time_s": 7.512615919113159,
+  "was_cached": true
+}

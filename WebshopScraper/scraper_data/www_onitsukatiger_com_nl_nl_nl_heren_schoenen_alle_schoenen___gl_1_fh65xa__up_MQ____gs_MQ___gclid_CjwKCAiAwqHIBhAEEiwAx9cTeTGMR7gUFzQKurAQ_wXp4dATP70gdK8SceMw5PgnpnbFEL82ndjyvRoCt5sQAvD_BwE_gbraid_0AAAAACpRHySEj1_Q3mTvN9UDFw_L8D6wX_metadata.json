@@ -1,0 +1,41 @@
+{
+  "url": "https://www.onitsukatiger.com/nl/nl-nl/heren/schoenen/alle-schoenen/?_gl=1*fh65xa*_up*MQ..*_gs*MQ..&gclid=CjwKCAiAwqHIBhAEEiwAx9cTeTGMR7gUFzQKurAQ_wXp4dATP70gdK8SceMw5PgnpnbFEL82ndjyvRoCt5sQAvD_BwE&gbraid=0AAAAACpRHySEj1-Q3mTvN9UDFw-L8D6wX",
+  "platform": "Custom",
+  "page_type": "pagination",
+  "selectors_tested": [
+    ".product-item"
+  ],
+  "best_selector": ".product-item",
+  "field_selectors": {
+    "name": [
+      ".product-item .product-name",
+      ".product-item h1",
+      ".product-item h2",
+      ".product-item h3"
+    ],
+    "price": [
+      ".product-item .price",
+      ".product-item .cost",
+      ".product-item .money",
+      ".product-item .currency"
+    ],
+    "image": [
+      ".product-item img.image",
+      ".product-item img.img",
+      ".product-item img.product-image"
+    ],
+    "description": [
+      ".product-item p.desc",
+      ".product-item p.description",
+      ".product-item p.product-desc"
+    ],
+    "url": [
+      ".product-item a.link",
+      ".product-item a.product-link",
+      ".product-item[href]"
+    ]
+  },
+  "num_products": 24,
+  "scrape_time_s": 23.953421115875244,
+  "was_cached": true
+}

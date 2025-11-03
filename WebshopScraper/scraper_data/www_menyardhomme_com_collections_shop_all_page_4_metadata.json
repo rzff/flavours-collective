@@ -1,0 +1,42 @@
+{
+  "url": "https://www.menyardhomme.com/collections/shop-all?page=4",
+  "platform": "Shopify",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    ".product-item__info"
+  ],
+  "best_selector": ".product-item__info",
+  "field_selectors": {
+    "name": [
+      ".product-item__info h1",
+      ".product-item__info h2",
+      ".product-item__info .title",
+      ".product-item__info .name",
+      ".product-item__info .product-name"
+    ],
+    "price": [
+      ".product-item__info .price",
+      ".product-item__info .cost",
+      ".product-item__info .money",
+      ".product-item__info .currency"
+    ],
+    "image": [
+      ".product-item__info img.image",
+      ".product-item__info img.img",
+      ".product-item__info .product-image"
+    ],
+    "description": [
+      ".product-item__info p.desc",
+      ".product-item__info p.description",
+      ".product-item__info .product-desc"
+    ],
+    "url": [
+      ".product-item__info a.link",
+      ".product-item__info a.product-link",
+      ".product-item__info[href]"
+    ]
+  },
+  "num_products": 19,
+  "scrape_time_s": 7.294500112533569,
+  "was_cached": true
+}
