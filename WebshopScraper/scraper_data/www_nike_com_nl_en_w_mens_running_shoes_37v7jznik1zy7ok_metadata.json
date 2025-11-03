@@ -1,0 +1,87 @@
+{
+  "url": "https://www.nike.com/nl/en/w/mens-running-shoes-37v7jznik1zy7ok",
+  "platform": "Custom",
+  "page_type": "pagination",
+  "selectors_tested": [
+    ".wall",
+    ".link-container",
+    ".is-closed",
+    ".show-more__btn",
+    ".btn-icon-wrapper",
+    ".product-card__messaging",
+    ".lhn--closed",
+    "#LocationPin",
+    ".css-1jvv505",
+    ".content-wrapper",
+    ".grid > div",
+    "#Nike Pegasus Premium",
+    ".interactive-profile-element",
+    ".css-79q9fn",
+    ".cancel-slot-container",
+    "[data-product-position]",
+    ".css-9g65ce",
+    ".css-1fqpt7r",
+    ".css-1mkms3h",
+    "#skip-to-products",
+    ".css-daug88",
+    ".dropdown__sub_list_item",
+    ".is--red",
+    ".untouched",
+    ".subheading",
+    ".css-1la3v4n",
+    ".css-q24gly",
+    ".css-19k7nfv",
+    ".desktop-brandList",
+    ".image-loader",
+    "#mkg-opt-client",
+    ".css-11930im",
+    "article",
+    ".css-3d22fv",
+    ".product-card__info",
+    ".css-g79wzn",
+    ".css-chugcn",
+    ".accordion-panel-wrapper",
+    ".product-card__price-wrapper",
+    ".is--purple",
+    "li > div",
+    ".css-1j2tzxk",
+    ".btn-primary-light",
+    ".css-t62sze",
+    ".d-lg-b",
+    ".is--pink",
+    ".categories",
+    ".product-card__count-wrapper",
+    ".nds-stack"
+  ],
+  "best_selector": "[data-product-position]",
+  "field_selectors": {
+    "name": [
+      ".product-card .product-name",
+      ".title"
+    ],
+    "price": [
+      ".product-card .price",
+      ".cost",
+      ".money",
+      ".currency"
+    ],
+    "image": [
+      ".product-card img.product-image",
+      "img.image",
+      "img.product-image"
+    ],
+    "description": [
+      ".product-card p.product-desc",
+      "p.desc",
+      "p.description"
+    ],
+    "url": [
+      ".product-card a.product-link",
+      "a.link",
+      "a[href]"
+    ]
+  },
+  "num_products": 24,
+  "scrape_time_s": 29.50415301322937,
+  "was_cached": false
+}

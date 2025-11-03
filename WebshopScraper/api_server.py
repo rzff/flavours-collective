@@ -28,9 +28,7 @@ except ImportError:
 
 # --- Cache Setup ---
 CACHE_FILE = "selector_cache.json"
-# In-memory cache, loaded from file
 site_cache: Dict[str, Dict[str, Any]] = {}
-# A lock to prevent race conditions when writing to the cache file
 cache_lock = asyncio.Lock()
 
 
@@ -39,7 +37,6 @@ def get_domain_key(url: str) -> str:
     try:
         return urlparse(url).netloc
     except Exception:
-        # Fallback for weird URLs
         return url.split("//")[-1].split("/")[0]
 
 
@@ -76,7 +73,7 @@ async def save_cache():
 app = FastAPI(
     title="Adaptive Product Search API",
     description="A cache-aware API to scrape product information with enhanced field extraction.",
-    version="2.0.0",  # Bumped version for new features
+    version="2.0.0",
 )
 
 
@@ -111,7 +108,7 @@ class ScrapeResponse(BaseModel):
     platform: str
     page_type: str
     selector: Optional[str] = None
-    field_selectors: Optional[Dict[str, List[str]]] = None  # New field
+    field_selectors: Optional[Dict[str, List[str]]] = None
     products: List[Product]
     cache_status: str
 
@@ -159,8 +156,8 @@ async def run_scrape(request: ScrapeRequest) -> Dict[str, Any]:
                 new_cache_entry = {
                     "selector": result["selector"],
                     "page_type": result["page_type"],
-                    "field_selectors": result.get("field_selectors"),  # New field
-                    "created_at": time.time(),  # For future TTL implementation
+                    "field_selectors": result.get("field_selectors"),
+                    "created_at": time.time(),
                 }
                 site_cache[domain_key] = new_cache_entry
                 print(f"💾 Saving new cache entry for {domain_key}.")
@@ -229,7 +226,5 @@ async def clear_all_cache():
 # --- Run the server ---
 if __name__ == "__main__":
     print("Starting FastAPI server on http://0.0.0.0:8000")
-    print(
-        "Enhanced version with field selector caching and improved product extraction"
-    )
+    print("Enhanced version with improved selector discovery")
     uvicorn.run("api_server:app", host="0.0.0.0", port=8000, reload=True)

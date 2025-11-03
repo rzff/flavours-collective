@@ -3,42 +3,35 @@
   "platform": "Shopify",
   "page_type": "infinite_scroll",
   "selectors_tested": [
-    "a.plp-product"
+    "[data-product-id]"
   ],
-  "best_selector": "a.plp-product",
+  "best_selector": "[data-product-id]",
   "field_selectors": {
     "name": [
-      ".product-card .h1",
-      ".product-card .h2",
-      ".product-card .h3",
-      ".product-card .h4",
-      ".product-card [class*='title']",
-      ".product-card [class*='name']",
-      ".product-card [class*='product-name']"
+      ".product-title",
+      ".product-name"
     ],
     "price": [
-      ".product-card [class*='price']",
-      ".product-card [class*='cost']",
-      ".product-card [class*='money']",
-      ".product-card [class*='currency']"
+      ".product-price",
+      ".price-tag",
+      ".money-display"
     ],
     "image": [
-      ".product-card img[class*='image']",
-      ".product-card img[class*='img']",
-      ".product-card img[class*='product-image']"
+      "img.product-image",
+      "img.product-img",
+      "picture.product-picture"
     ],
     "description": [
-      ".product-card p[class*='desc']",
-      ".product-card p[class*='description']",
-      ".product-card p[class*='product-desc']"
+      "p.product-desc",
+      "p.product-description",
+      "div.product-text"
     ],
     "url": [
-      ".product-card a[href]",
-      ".product-card [class*='link']",
-      ".product-card [class*='product-link']"
+      "a.product-link",
+      "a[href*='product']"
     ]
   },
-  "num_products": 64,
-  "scrape_time_s": 9.975198984146118,
+  "num_products": 914,
+  "scrape_time_s": 19.681654930114746,
   "was_cached": true
 }

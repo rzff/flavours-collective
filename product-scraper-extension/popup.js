@@ -80,7 +80,7 @@ function performScraping(url, withDetails) {
   const requestData = {
     url: url,
     strategy: "HYBRID",
-    forceRefresh: false,
+    forceRefresh: true,
     maxProducts: withDetails ? 50 : 25,
   };
 

@@ -1,0 +1,46 @@
+{
+  "url": "https://cancanfurnishings.com/collections/dining-tables",
+  "platform": "Shopify",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    ".product",
+    "[data-product-id]",
+    ".product-item",
+    "#product-grid-item",
+    "article[role='listitem']",
+    "a.product-item",
+    ".product-card",
+    ".product-tile",
+    ".product-grid__item",
+    ".grid__item",
+    ".item",
+    "li.product",
+    "a.plp-product"
+  ],
+  "best_selector": "[data-product-id]",
+  "field_selectors": {
+    "name": [
+      ".product-card .product-name",
+      ".product-grid .title"
+    ],
+    "price": [
+      ".product-card .price",
+      ".product-grid .money"
+    ],
+    "image": [
+      ".product-card img[src*='product']",
+      ".product-grid .img"
+    ],
+    "description": [
+      ".product-card p.desc",
+      ".product-grid .product-desc"
+    ],
+    "url": [
+      ".product-card a.link",
+      ".product-grid .product-link"
+    ]
+  },
+  "num_products": 40,
+  "scrape_time_s": 29.755339860916138,
+  "was_cached": false
+}

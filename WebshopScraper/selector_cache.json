@@ -1,110 +1,61 @@
 {
-  "eu.aimeleondore.com": {
-    "selector": "a.plp-product",
-    "page_type": "infinite_scroll",
-    "field_selectors": {
-      "name": [
-        ".plp-product h1",
-        ".plp-product h2",
-        ".plp-product h3",
-        ".plp-product h4",
-        ".plp-product .title",
-        ".plp-product .name",
-        ".plp-product .product-name"
-      ],
-      "price": [
-        ".plp-product .price",
-        ".plp-product .cost",
-        ".plp-product .money",
-        ".plp-product .currency"
-      ],
-      "image": [
-        ".plp-product img.image",
-        ".plp-product img.img",
-        ".plp-product img.product-image"
-      ],
-      "description": [
-        ".plp-product p.desc",
-        ".plp-product p.description",
-        ".plp-product p.product-desc"
-      ],
-      "url": [
-        ".plp-product a.link",
-        ".plp-product a.product-link",
-        ".plp-product a[href]"
-      ]
-    },
-    "created_at": 1761943443.717178
-  },
-  "www.aimeleondore.com": {
-    "selector": "a.plp-product",
-    "page_type": "infinite_scroll",
-    "field_selectors": {
-      "name": [
-        ".product-card .h1",
-        ".product-card .h2",
-        ".product-card .h3",
-        ".product-card .h4",
-        ".product-card [class*='title']",
-        ".product-card [class*='name']",
-        ".product-card [class*='product-name']"
-      ],
-      "price": [
-        ".product-card [class*='price']",
-        ".product-card [class*='cost']",
-        ".product-card [class*='money']",
-        ".product-card [class*='currency']"
-      ],
-      "image": [
-        ".product-card img[class*='image']",
-        ".product-card img[class*='img']",
-        ".product-card img[class*='product-image']"
-      ],
-      "description": [
-        ".product-card p[class*='desc']",
-        ".product-card p[class*='description']",
-        ".product-card p[class*='product-desc']"
-      ],
-      "url": [
-        ".product-card a[href]",
-        ".product-card [class*='link']",
-        ".product-card [class*='product-link']"
-      ]
-    },
-    "created_at": 1762002581.9924679
-  },
   "ninetyfour.world": {
-    "selector": ".product-item",
+    "selector": "[data-js-product-item]",
     "page_type": "infinite_scroll",
     "field_selectors": {
       "name": [
-        ".product-item h1",
-        ".product-item .title",
-        ".product-item .name",
-        ".product-item .product-name"
+        ".product-card .product-name",
+        ".product-title"
       ],
       "price": [
-        ".product-item .price",
-        ".product-item .cost",
-        ".product-item .money",
-        ".product-item .currency"
+        ".product-card .money",
+        ".product-price"
       ],
       "image": [
-        ".product-item img.image",
-        ".product-item img.img",
-        ".product-item img.product-image"
+        ".product-card img[src*='product']",
+        ".product-image"
       ],
       "description": [
-        ".product-item p.desc",
-        ".product-item p.description",
-        ".product-item p.product-desc"
+        ".product-card p.product-desc",
+        ".product-description"
       ],
       "url": [
-        ".product-item a.link",
-        ".product-item a.product-link",
-        ".product-item a[href]"
+        ".product-card a[href*='products']",
+        ".product-link"
       ]
     },
-    "created_at": 1762003350.885958
+    "created_at": 1762170852.880893
+  },
+  "www.nike.com": {
+    "selector": "[data-product-position]",
+    "page_type": "pagination",
+    "field_selectors": {
+      "name": [
+        ".product-card .product-name",
+        ".title"
+      ],
+      "price": [
+        ".product-card .price",
+        ".cost",
+        ".money",
+        ".currency"
+      ],
+      "image": [
+        ".product-card img.product-image",
+        "img.image",
+        "img.product-image"
+      ],
+      "description": [
+        ".product-card p.product-desc",
+        "p.desc",
+        "p.description"
+      ],
+      "url": [
+        ".product-card a.product-link",
+        "a.link",
+        "a[href]"
+      ]
+    },
+    "created_at": 1762170939.238175
   }
 }

@@ -58,29 +58,83 @@ Return ONLY the page type string.
 # ---------------------------
 async def detect_product_selector(html: str, platform: str, url: str) -> str:
     prompt = f"""
-You are an expert in e-commerce HTML parsing.
-HTML snippet (truncated): {html[:7000]}
-Platform: {platform}
-Return a JSON array of 5 CSS selectors for product containers.
-Return ONLY the JSON array.
+You are an expert in e-commerce HTML parsing and CSS selector analysis.
+
+CONTEXT:
+- URL: {url}
+- Platform: {platform}
+- Goal: Find the BEST CSS selector for individual product containers
+
+CRITERIA for good product selectors:
+1. Should target INDIVIDUAL product containers, not product lists/wrappers
+2. Should be specific enough to avoid including navigation, headers, footers
+3. Should match multiple products on the page
+4. Should contain product-specific elements (images, prices, names)
+5. Prefer class-based selectors over tag-based ones
+6. Avoid overly generic selectors like "div" or "li" without classes
+
+COMMON PATTERNS by platform:
+- Shopify: .product-item, .grid-item, .product-card, [data-product-handle]
+- WooCommerce: .product, .woocommerce-product, .type-product
+- Custom: Look for repeating patterns with product images, prices, "add to cart"
+
+BAD SELECTORS to avoid:
+- Selectors that include prices/names inside them (should be separate)
+- Selectors that match only one product
+- Selectors that include non-product content
+
+HTML snippet (first 8000 chars):
+{html[:8000]}
+
+ANALYSIS TASK:
+1. Identify all potential product container selectors
+2. Rank them by specificity and accuracy
+3. Choose the best one that isolates individual products
+
+Return ONLY a JSON array of the top 3 CSS selectors, most specific first.
+Example: ["[data-product-id]", ".product-card", ".grid-item"]
 """
     try:
         response = await local_llm_call(prompt)
+        print(f"🔍 LLM Product Selector Response: {response}")
+
         match = re.search(r"\[.*\]", response, re.DOTALL)
-        selectors = json.loads(match.group(0)) if match else []
-        selectors = [s.strip() for s in selectors if s.strip()]
-        return selectors[0] if selectors else ".product-item"
-    except Exception:
+        if match:
+            selectors = json.loads(match.group(0))
+            selectors = [s.strip() for s in selectors if s.strip()]
+
+            # Validate selectors aren't too generic
+            good_selectors = []
+            for selector in selectors:
+                if (
+                    len(selector) > 3
+                    and not selector.lower() in ["div", "li", "a", "article", "section"]
+                    and not selector.startswith("body")
+                    and not selector.startswith("html")
+                ):
+                    good_selectors.append(selector)
+
+            if good_selectors:
+                print(f"✅ Selected product selector: {good_selectors[0]}")
+                return good_selectors[0]
+
+        # Fallback with platform-specific defaults
+        fallbacks = {
+            "shopify": ".product-item",
+            "woocommerce": ".product",
+            "custom": '[class*="product"], [class*="item"]',
+        }
+        return fallbacks.get(platform.lower(), ".product-item")
+
+    except Exception as e:
+        print(f"❌ Product selector detection failed: {e}")
         return ".product-item"
 
 
-# ---------------------------
-# Load more buttons detection
-# ---------------------------
 async def detect_load_more_selectors(html: str, platform: str) -> List[str]:
     prompt = f"""
 You are an expert in e-commerce HTML parsing.
-HTML snippet (truncated): {html[:5000]}
+HTML snippet (truncated): {html[:15000]}
 Platform: {platform}
 Return a JSON array of CSS selectors for buttons that load more products.
 Only return the array.

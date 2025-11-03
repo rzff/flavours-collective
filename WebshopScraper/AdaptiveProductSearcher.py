@@ -150,7 +150,7 @@ async def fetch_html_with_scroll(
 # ---------------------------------------------------------------------
 # Enhanced product extraction with field selector caching
 # ---------------------------------------------------------------------
-async def extract_products_with_field_selectors(
+def extract_products_with_field_selectors(
     html: str,
     selector: str,
     base_url: str,
@@ -164,22 +164,19 @@ async def extract_products_with_field_selectors(
     if cached_field_selectors:
         print(f"⚡ Using cached field selectors")
         # Use the enhanced extraction with cached field selectors
-        return await extract_products_bs4_enhanced(
+        return extract_products_bs4_enhanced(
             html, selector, base_url, platform, cached_field_selectors
         )
     else:
         print("🔍 Detecting field selectors with LLM...")
-        return await extract_products_bs4_enhanced(html, selector, base_url, platform)
+        return extract_products_bs4_enhanced(html, selector, base_url, platform)
 
 
-# ---------------------------------------------------------------------
-# REFACTORED: Unified scrape flow (now with enhanced field extraction)
-# ---------------------------------------------------------------------
 async def scrape(
     url: str,
     cached_selector: str | None = None,
     cached_page_type: str | None = None,
-    cached_field_selectors: Dict[str, List[str]] | None = None,  # New cache parameter
+    cached_field_selectors: Dict[str, List[str]] | None = None,
     headless: bool = True,
 ) -> Dict:
     print(f"📡 Fetching: {url}")
@@ -216,7 +213,7 @@ async def scrape(
         page_type = await detect_page_type(html, url)  # Slow LLM call
         print(f"🔒 LLM detected Page Type: {page_type}")
 
-    # Step 5: Iterative selector discovery (Check cache first)
+    # Step 5: Enhanced selector discovery (Check cache first)
     best_selector = None
     tested_selectors = []
     products = []
@@ -225,11 +222,12 @@ async def scrape(
         print(f"⚡ Cache HIT for Selector: {cached_selector}")
         best_selector = cached_selector
         tested_selectors = [cached_selector]
-        products = await extract_products_with_field_selectors(
+        # FIX: Remove await - this is now a synchronous function
+        products = extract_products_with_field_selectors(
             html, best_selector, url, platform, cached_field_selectors
         )
     else:
-        print("🐌 LLM call for Selector...")
+        print("🐌 Running enhanced selector discovery...")
         best_selector, tested_selectors, products = await find_valid_selector(
             html, platform, url
         )
@@ -242,7 +240,7 @@ async def scrape(
             "page_type": page_type,
             "selector": None,
             "products": [],
-            "field_selectors": None,  # New field
+            "field_selectors": None,
         }
     print(f"✅ Initial selector: {best_selector} → {len(products)} products")
 
@@ -255,7 +253,8 @@ async def scrape(
         print("✅ Page type is static, no scrolling needed.")
 
     # Step 7: Final extraction from fully-loaded HTML
-    final_products = await extract_products_with_field_selectors(
+    # FIX: Remove await - this is now a synchronous function
+    final_products = extract_products_with_field_selectors(
         final_html, best_selector, url, platform, cached_field_selectors
     )
     print(f"🏁 Final extraction: {len(final_products)} products found.")
@@ -282,7 +281,7 @@ async def scrape(
                 "page_type": page_type,
                 "selectors_tested": tested_selectors,
                 "best_selector": best_selector,
-                "field_selectors": field_selectors,  # New field
+                "field_selectors": field_selectors,
                 "num_products": len(final_products),
                 "scrape_time_s": time.time() - start_time,
                 "was_cached": bool(cached_selector),
@@ -297,14 +296,11 @@ async def scrape(
         "platform": platform,
         "page_type": page_type,
         "selector": best_selector,
-        "field_selectors": field_selectors,  # New field
+        "field_selectors": field_selectors,
         "products": final_products,
     }
 
 
-# ---------------------------------------------------------------------
-# CLI Entrypoint (Updated to handle new return fields)
-# ---------------------------------------------------------------------
 async def main():
     urls = [
         "https://eu.aimeleondore.com/collections/shop-all",
