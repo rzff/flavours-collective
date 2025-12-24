@@ -1,0 +1,19 @@
+{
+  "url": "https://www.apcstore.com/collections/all",
+  "platform": "Shopify",
+  "selectors_tested": [
+    ".product-container",
+    ".product-item",
+    ".grid-product",
+    ".collection-item",
+    ".shopify-product",
+    "a.plp-product",
+    ".product-card",
+    ".product-tile",
+    ".grid__item",
+    ".product",
+    ".item"
+  ],
+  "best_selector": ".product-card",
+  "num_products": 96
+}

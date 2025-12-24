@@ -1,0 +1,43 @@
+{
+  "url": "https://www.bax-shop.nl/home-audio/koptelefoons",
+  "platform": "Custom",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    ".product-result-overview"
+  ],
+  "best_selector": ".product-result-overview",
+  "field_selectors": {
+    "name": [
+      ".product-result-overview h1",
+      ".product-result-overview h2",
+      ".product-result-overview h3",
+      ".product-result-overview .title",
+      ".product-result-overview .name",
+      ".product-result-overview .product-name"
+    ],
+    "price": [
+      ".product-result-overview .price",
+      ".product-result-overview .cost",
+      ".product-result-overview .money",
+      ".product-result-overview .currency"
+    ],
+    "image": [
+      ".product-result-overview img.image",
+      ".product-result-overview img.img",
+      ".product-result-overview .product-image"
+    ],
+    "description": [
+      ".product-result-overview p.desc",
+      ".product-result-overview p.description",
+      ".product-result-overview .product-desc"
+    ],
+    "url": [
+      ".product-result-overview a.link",
+      ".product-result-overview a.product-link",
+      ".product-result-overview[href]"
+    ]
+  },
+  "num_products": 1,
+  "scrape_time_s": 12.156025648117065,
+  "was_cached": true
+}

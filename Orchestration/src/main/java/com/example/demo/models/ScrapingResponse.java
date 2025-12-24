@@ -1,30 +1,34 @@
-package com.example.demo.model;
+package com.example.demo.models;
 
-import lombok.Data;
-import lombok.Builder;
-
-@Data
-@Builder
 public class ScrapingResponse {
     private boolean success;
     private String message;
     private ScrapingResult data;
-    private Long timestamp;
+    private Long processingTime;
+    
+    public boolean isSuccess() { return success; }
+    public void setSuccess(boolean success) { this.success = success; }
+    
+    public String getMessage() { return message; }
+    public void setMessage(String message) { this.message = message; }
+    
+    public ScrapingResult getData() { return data; }
+    public void setData(ScrapingResult data) { this.data = data; }
+    
+    public Long getProcessingTime() { return processingTime; }
+    public void setProcessingTime(Long processingTime) { this.processingTime = processingTime; }
     
     public static ScrapingResponse from(ScrapingResult result) {
-        return ScrapingResponse.builder()
-                .success(true)
-                .message("Scraping completed successfully")
-                .data(result)
-                .timestamp(System.currentTimeMillis())
-                .build();
+        ScrapingResponse response = new ScrapingResponse();
+        response.setSuccess(true);
+        response.setData(result);
+        return response;
     }
     
     public static ScrapingResponse error(String message) {
-        return ScrapingResponse.builder()
-                .success(false)
-                .message(message)
-                .timestamp(System.currentTimeMillis())
-                .build();
+        ScrapingResponse response = new ScrapingResponse();
+        response.setSuccess(false);
+        response.setMessage(message);
+        return response;
     }
 }

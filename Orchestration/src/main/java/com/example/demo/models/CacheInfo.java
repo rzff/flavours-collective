@@ -1,14 +1,16 @@
-package com.example.demo.model;
+package com.example.demo.models;
 
-import lombok.Data;
-import java.time.LocalDateTime;
-
-@Data
 public class CacheInfo {
-    private String domain;
-    private String cacheKey;
-    private LocalDateTime lastUpdated;
-    private Integer hitCount;
+    private String key;
+    private long timestamp;
     private SelectorInfo selectorInfo;
-    private Boolean isValid;
+    
+    public String getKey() { return key; }
+    public void setKey(String key) { this.key = key; }
+    
+    public long getTimestamp() { return timestamp; }
+    public void setTimestamp(long timestamp) { this.timestamp = timestamp; }
+    
+    public SelectorInfo getSelectorInfo() { return selectorInfo; }
+    public void setSelectorInfo(SelectorInfo selectorInfo) { this.selectorInfo = selectorInfo; }
 }

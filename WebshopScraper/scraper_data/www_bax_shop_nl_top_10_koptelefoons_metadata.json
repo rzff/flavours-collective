@@ -1,0 +1,43 @@
+{
+  "url": "https://www.bax-shop.nl/top-10/koptelefoons",
+  "platform": "Custom",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    ".product-box"
+  ],
+  "best_selector": ".product-box",
+  "field_selectors": {
+    "name": [
+      ".product-box h1",
+      ".product-box h2",
+      ".product-box h3",
+      ".product-box .title",
+      ".product-box .name",
+      ".product-box .product-name"
+    ],
+    "price": [
+      ".product-box .price",
+      ".product-box .cost",
+      ".product-box .money",
+      ".product-box .currency"
+    ],
+    "image": [
+      ".product-box img.image",
+      ".product-box img.img",
+      ".product-box .product-image"
+    ],
+    "description": [
+      ".product-box p.desc",
+      ".product-box p.description",
+      ".product-box .product-desc"
+    ],
+    "url": [
+      ".product-box a.link",
+      ".product-box a.product-link",
+      ".product-box[href]"
+    ]
+  },
+  "num_products": 10,
+  "scrape_time_s": 9.69095778465271,
+  "was_cached": true
+}

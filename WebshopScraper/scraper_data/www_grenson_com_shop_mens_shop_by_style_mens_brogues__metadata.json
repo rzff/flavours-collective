@@ -1,0 +1,41 @@
+{
+  "url": "https://www.grenson.com/shop-mens/shop-by-style/mens-brogues/",
+  "platform": "Custom",
+  "page_type": "pagination",
+  "selectors_tested": [
+    ".card"
+  ],
+  "best_selector": ".card",
+  "field_selectors": {
+    "name": [
+      ".card .product-name",
+      ".card h1",
+      ".card h2",
+      ".card h3",
+      ".card h4"
+    ],
+    "price": [
+      ".card .price",
+      ".card .cost",
+      ".card .money",
+      ".card .currency"
+    ],
+    "image": [
+      ".card img.product-image",
+      ".card img[src*='product']",
+      ".card img[alt*='product']"
+    ],
+    "description": [
+      ".card p.product-desc",
+      ".card p.desc",
+      ".card p.description"
+    ],
+    "url": [
+      ".card a.product-link",
+      ".card a[href*='product']"
+    ]
+  },
+  "num_products": 38,
+  "scrape_time_s": 10.85421895980835,
+  "was_cached": true
+}

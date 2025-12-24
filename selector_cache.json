@@ -1,0 +1,35 @@
+{
+  "eu.aimeleondore.com": {
+    "selector": ".plp-product",
+    "page_type": "infinite_scroll",
+    "field_selectors": {
+      "name": [
+        ".plp-product h1",
+        ".plp-product h2",
+        ".plp-product h3",
+        ".plp-product .product-name"
+      ],
+      "price": [
+        ".plp-product .price",
+        ".plp-product .product-price",
+        ".plp-product span.money"
+      ],
+      "image": [
+        ".plp-product img.product-image",
+        ".plp-product img.img",
+        ".plp-product .product-image"
+      ],
+      "description": [
+        ".plp-product p.product-desc",
+        ".plp-product p.desc",
+        ".plp-product .product-description"
+      ],
+      "url": [
+        ".plp-product a.product-link",
+        ".plp-product a[href]",
+        ".plp-product .product-link"
+      ]
+    },
+    "created_at": 1766604410.429364
+  }
+}

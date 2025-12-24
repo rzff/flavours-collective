@@ -1,0 +1,969 @@
+[
+  {
+    "url": "https://www.apcstore.com/collections/all",
+    "platform": "Shopify",
+    "selector": ".product-card",
+    "products": [
+      {
+        "name": "Color70's F T-shirt70's F T-shirtOrganic cotton T-shirt in ecru with a 70s-style A.P.C. logo.Regular price110.00 €Sale price66.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHBM-F26534AAD_00.jpg?v=1764683530&width=2070"
+      },
+      {
+        "name": "70's F T-shirt",
+        "url": "https://www.apcstore.com/products/70s-f-t-shirt-aad-cohbm-f26534",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHBM-F26534AAD_00.jpg?v=1764683530&width=2070"
+      },
+      {
+        "name": "Color70's F T-shirt70's F T-shirtOrganic cotton T-shirt in sky blue with a 70s-style A.P.C. logo.Regular price110.00 €Sale price66.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHBM-F26534IAT_00.jpg?v=1764683530&width=2070"
+      },
+      {
+        "name": "70's F T-shirt",
+        "url": "https://www.apcstore.com/products/70s-f-t-shirt-iat-cohbm-f26534",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHBM-F26534IAT_00.jpg?v=1764683530&width=2070"
+      },
+      {
+        "name": "Color70's H T-shirt70's H T-shirtOrganic cotton T-shirt in sky blue with a 70s-style A.P.C. logo.Regular price120.00 €Sale price72.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHBM-H26535IAT_00.jpg?v=1764683530&width=2070"
+      },
+      {
+        "name": "70's H T-shirt",
+        "url": "https://www.apcstore.com/products/t-shirt-70s-h-gots",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHBM-H26535IAT_00.jpg?v=1764683530&width=2070"
+      },
+      {
+        "name": "Color70's H T-shirt70's H T-shirtOrganic cotton T-shirt in ecru with a 70s-style A.P.C. logo.Regular price120.00 €Sale price60.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHBM-H26535AAD_00.jpg?v=1747902628&width=2070"
+      },
+      {
+        "name": "70's H T-shirt",
+        "url": "https://www.apcstore.com/products/70s-h-t-shirt-aad-cohbm-h26535",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHBM-H26535AAD_00.jpg?v=1747902628&width=2070"
+      },
+      {
+        "name": "A.P.C. & Laurent Deroo Architecte bookSold outBook on the collaboration between Jean Touitou and Laurent Deroo.Sale price50.00 €Sold out",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PIAAA-M91016AAA_00.jpg?v=1752572509&width=2070"
+      },
+      {
+        "name": "A.P.C. & Laurent Deroo Architecte book",
+        "url": "https://www.apcstore.com/products/apc-laurent-deroo-architecte-book-aaa-piaaa-m91016",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PIAAA-M91016AAA_00.jpg?v=1752572509&width=2070"
+      },
+      {
+        "name": "A.P.C. dog collarIndigo denim dog collar.Sale price65.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHIZ-M66086IAI_00.jpg?v=1760602596&width=2070"
+      },
+      {
+        "name": "A.P.C. dog collar",
+        "url": "https://www.apcstore.com/products/apc-dog-collar-iai-cohiz-m66086",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHIZ-M66086IAI_00.jpg?v=1760602596&width=2070"
+      },
+      {
+        "name": "A.P.C. embroidered overshirtRecycled organic cotton - Putty grey.Sale price230.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHLD-H32050AAE_01.jpg?v=1760603753&width=2070"
+      },
+      {
+        "name": "A.P.C. embroidered overshirt",
+        "url": "https://www.apcstore.com/products/apc-embroidered-overshirt-aae-cohld-h32050",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHLD-H32050AAE_01.jpg?v=1760603753&width=2070"
+      },
+      {
+        "name": "ColorA.P.C. Golf logo polo shirtA.P.C. Golf logo polo shirtA.P.C. Golf - White.Sale price180.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PSALW-H26561AAB_00.jpg?v=1755176496&width=2070"
+      },
+      {
+        "name": "A.P.C. Golf logo polo shirt",
+        "url": "https://www.apcstore.com/products/apc-golf-logo-polo-shirt-aab-psalw-h26561",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PSALW-H26561AAB_00.jpg?v=1755176496&width=2070"
+      },
+      {
+        "name": "ColorA.P.C. Golf logo polo shirtA.P.C. Golf logo polo shirtA.P.C. Golf - Navy blue.Sale price180.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PSALW-H26561IAK_00.jpg?v=1755176496&width=2070"
+      },
+      {
+        "name": "A.P.C. Golf logo polo shirt",
+        "url": "https://www.apcstore.com/products/apc-golf-logo-polo-shirt-iak-psalw-h26561",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PSALW-H26561IAK_00.jpg?v=1755176496&width=2070"
+      },
+      {
+        "name": "A.P.C. Golf logo polo shirtA.P.C. Golf - White.Sale price170.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PSALX-F26567AAB_00.jpg?v=1755176495&width=2070"
+      },
+      {
+        "name": "A.P.C. Golf logo polo shirt",
+        "url": "https://www.apcstore.com/products/apc-golf-logo-polo-shirt-aab-psalx-f26567",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PSALX-F26567AAB_00.jpg?v=1755176495&width=2070"
+      },
+      {
+        "name": "ColorA.P.C. key ringA.P.C. key ringSold outKey ring in smooth black leather embossed with A.P.C.Sale price55.00 €Sold out",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PXAWV-H63108LZZ_00.jpg?v=1748552924&width=2070"
+      },
+      {
+        "name": "A.P.C. key ring",
+        "url": "https://www.apcstore.com/products/apc-key-ring-lzz-pxawv-h63108",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PXAWV-H63108LZZ_00.jpg?v=1748552924&width=2070"
+      },
+      {
+        "name": "ColorA.P.C. key ringA.P.C. key ringKey ring in smooth nut brown leather embossed with A.P.C.Sale price55.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PXAWV-H63108CAD_00.jpg?v=1748552927&width=2070"
+      },
+      {
+        "name": "A.P.C. key ring",
+        "url": "https://www.apcstore.com/products/apc-key-ring-cad-pxawv-h63108",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PXAWV-H63108CAD_00.jpg?v=1748552927&width=2070"
+      },
+      {
+        "name": "A.P.C. Myd satchelWater-repellent fluorescent yellow outdoor satchel.Sale price195.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PAAGZ-H61734DAM_00.jpg?v=1750407556&width=2070"
+      },
+      {
+        "name": "A.P.C. Myd satchel",
+        "url": "https://www.apcstore.com/products/apc-myd-satchel-dam-paagz-h61734",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PAAGZ-H61734DAM_00.jpg?v=1750407556&width=2070"
+      },
+      {
+        "name": "ColorA.P.C. SUBU Belt Line ShoesA.P.C. SUBU Belt Line ShoesSubu x A.P.C. black sheepskin-like winter sandals.Regular price125.00 €Sale price62.50 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PSAKS-M53322LZZ_00.jpg?v=1748552917&width=2070"
+      },
+      {
+        "name": "A.P.C. SUBU Belt Line Shoes",
+        "url": "https://www.apcstore.com/products/apc-subu-belt-line-shoes-lzz-psaks-m53322",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PSAKS-M53322LZZ_00.jpg?v=1748552917&width=2070"
+      },
+      {
+        "name": "ColorA.P.C. SUBU Belt Line ShoesA.P.C. SUBU Belt Line ShoesSubu x A.P.C. beige sheepskin-like winter sandals.Regular price125.00 €Sale price62.50 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PSAKS-M53322BAA_00.jpg?v=1748552917&width=2070"
+      },
+      {
+        "name": "A.P.C. SUBU Belt Line Shoes",
+        "url": "https://www.apcstore.com/products/apc-subu-belt-line-shoes-baa-psaks-m53322",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PSAKS-M53322BAA_00.jpg?v=1748552917&width=2070"
+      },
+      {
+        "name": "ColorA.P.C. SUBU F-LINE ShoesA.P.C. SUBU F-LINE ShoesA.P.C. SUBU F-LINE ShoesSubu x A.P.C. dark navy blue quilted winter sandals.Regular price95.00 €Sale price47.50 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PAAGD-M53323IAK_00.jpg?v=1748552913&width=2070"
+      },
+      {
+        "name": "A.P.C. SUBU F-LINE Shoes",
+        "url": "https://www.apcstore.com/products/apc-subu-f-line-shoes-iak-paagd-m53323",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PAAGD-M53323IAK_00.jpg?v=1748552913&width=2070"
+      },
+      {
+        "name": "ColorA.P.C. SUBU F-LINE ShoesA.P.C. SUBU F-LINE ShoesA.P.C. SUBU F-LINE ShoesSubu x A.P.C. beige quilted winter sandals .Regular price95.00 €Sale price47.50 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PAAGD-M53323BAA_04.jpg?v=1747775371&width=2070"
+      },
+      {
+        "name": "A.P.C. SUBU F-LINE Shoes",
+        "url": "https://www.apcstore.com/products/apc-subu-f-line-shoes-baa-paagd-m53323",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PAAGD-M53323BAA_04.jpg?v=1747775371&width=2070"
+      },
+      {
+        "name": "ColorA.P.C. SUBU F-LINE ShoesA.P.C. SUBU F-LINE ShoesA.P.C. SUBU F-LINE ShoesSubu x A.P.C. Khaki quilted winter sandals.Regular price95.00 €Sale price47.50 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PAAGD-M53323JAA_00.jpg?v=1748552918&width=2070"
+      },
+      {
+        "name": "A.P.C. SUBU F-LINE Shoes",
+        "url": "https://www.apcstore.com/products/apc-subu-f-line-shoes-jaa-paagd-m53323",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PAAGD-M53323JAA_00.jpg?v=1748552918&width=2070"
+      },
+      {
+        "name": "A.P.C. Tracks t-shirtOrganic cotton - White.Sale price95.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHBM-H26479AAB_c55e163d-28a5-43d1-aaa4-dbcc8c614ffd.jpg?v=1763550391&width=2070"
+      },
+      {
+        "name": "A.P.C. Tracks t-shirt",
+        "url": "https://www.apcstore.com/products/apc-tracks-t-shirt-aab-cohbm-m26475",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHBM-H26479AAB_c55e163d-28a5-43d1-aaa4-dbcc8c614ffd.jpg?v=1763550391&width=2070"
+      },
+      {
+        "name": "A.P.C. Transmission bookSold outBook on the founding of A.P.C.Sale price70.00 €Sold out",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PIAAA-M91017AAA_00.jpg?v=1752572509&width=2070"
+      },
+      {
+        "name": "A.P.C. Transmission book",
+        "url": "https://www.apcstore.com/products/apc-transmission-book-aaa-piaaa-m91017",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PIAAA-M91017AAA_00.jpg?v=1752572509&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. Shrunken Fit JacketSold outBoxy workwear jacket in thick beige canvas.Regular price390.00 €Sale price234.00 €Sold out",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKM-F32020CAB_00.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. Shrunken Fit Jacket",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-shrunken-fit-jacket-cab-cohkm-f32020",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKM-F32020CAB_00.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The  Varsity JacketNavy blue teddy with patches made in the USA.Regular price1 190.00 €Sale price714.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/WOASO-M32013IOA_00.jpg?v=1758291308&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The  Varsity Jacket",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-varsity-jacket-ioa-woaso-m32013",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/WOASO-M32013IOA_00.jpg?v=1758291308&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The A.P.C. BagHazelnut brown Demi-Lune bag embossed in the Marc Jacobs style.Regular price450.00 €Sale price315.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PXBVV-F67062CAD_00.jpg?v=1758291307&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The A.P.C. Bag",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-apc-bag-cad-pxbvv-f67062",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PXBVV-F67062CAD_00.jpg?v=1758291307&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The A.P.C. ToteSold outBrown smooth leather horizontal tote bag.Sale price475.00 €Sold out",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PXCCP-F67063CAD_01.jpg?v=1758291307&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The A.P.C. Tote",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-apc-tote-cad-pxccp-f67063",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PXCCP-F67063CAD_01.jpg?v=1758291307&width=2070"
+      },
+      {
+        "name": "ColorX A.P.C. x Marc Jacobs. The Box T-ShirtA.P.C. x Marc Jacobs. The Box T-ShirtUnisex white T-shirt with mixed A.P.C. and Marc Jacobs logos.Regular price110.00 €Sale price66.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKS-H26554AAB_00.jpg?v=1758291306&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Box T-Shirt",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-box-t-shirt-aab-cohks-h26554",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKS-H26554AAB_00.jpg?v=1758291306&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Carte Orange T-ShirtWhite unisex T-shirt with \"carte orange\" and student card print.Regular price125.00 €Sale price75.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKS-M26553AAB_00.jpg?v=1758291306&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Carte Orange T-Shirt",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-carte-orange-t-shirt-aab-cohks-m26553",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKS-M26553AAB_00.jpg?v=1758291306&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Charlie CapUnisex brown cap with The Cap embroidery.Regular price95.00 €Sale price57.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKM-M24173CAB_00.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Charlie Cap",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-charlie-cap-cab-cohkm-m24173",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKM-M24173CAB_00.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Coin PendantUnisex pendant in the shape of an antique coin.Regular price150.00 €Sale price90.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/MEAEC-M70903SAB_00.jpg?v=1758291306&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Coin Pendant",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-coin-pendant-sab-meaec-m70903",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/MEAEC-M70903SAB_00.jpg?v=1758291306&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Denim Unisex JacketLoose-fitting workwear jacket in faded and organic Japanese denim.Regular price390.00 €Sale price234.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKK-M32011IAL_00.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Denim Unisex Jacket",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-denim-unisex-jacket-ial-cohkk-m32011",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKK-M32011IAL_00.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Eden CapUniversity of Paris and New York blend cap.Regular price95.00 €Sale price57.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKQ-M24174IAK_00.jpg?v=1758291306&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Eden Cap",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-eden-cap-iak-cohkq-m24174",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKQ-M24174IAK_00.jpg?v=1758291306&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Jean AaronWide-leg 90s jeans in raw and organic Japanese denim.Regular price270.00 €Sale price162.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKL-H09238IAI_00_0e1aa691-90d9-4270-83ca-1442b4b04bb7.jpg?v=1759392635&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Jean Aaron",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-jean-aaron-iai-cohkl-h09238",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKL-H09238IAI_00_0e1aa691-90d9-4270-83ca-1442b4b04bb7.jpg?v=1759392635&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Jean Elisabeth70's wide-leg jeans in raw and organic Japanese denim.Regular price270.00 €Sale price162.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKL-F09239IAI_00_49eb0678-879b-46b0-ae19-a464a7bb1176.jpg?v=1759392556&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Jean Elisabeth",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-jean-elisabeth-iai-cohkl-f09239",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKL-F09239IAI_00_49eb0678-879b-46b0-ae19-a464a7bb1176.jpg?v=1759392556&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Mens NY CrewneckSold outMottled grey sweatshirt with Marc Jacobs university logo.Regular price220.00 €Sale price132.00 €Sold out",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKQ-H37004PLA_00.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Mens NY Crewneck",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-mens-ny-crewneck-pla-cohkq-h37004",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKQ-H37004PLA_00.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Mens Paris CrewneckNavy blue sweatshirt with A.P.C. University logo.Regular price220.00 €Sale price132.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKQ-H37003IAK_00.jpg?v=1758291306&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Mens Paris Crewneck",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-mens-paris-crewneck-iak-cohkq-h37003",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKQ-H37003IAK_00.jpg?v=1758291306&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Mini SkirtMini skirt in raw and organic Japanese denim.Regular price180.00 €Sale price108.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKL-F06466IAI_00_28953268-9117-4d70-8d57-c45399623d65.jpg?v=1759392501&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Mini Skirt",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-mini-skirt-iai-cohkl-f06466",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKL-F06466IAI_00_28953268-9117-4d70-8d57-c45399623d65.jpg?v=1759392501&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Penny LoaferSold outPenny loafers in smooth dark brown leather.Regular price310.00 €Sale price186.00 €Sold out",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PXCCQ-F53329CAE_00.jpg?v=1758291306&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Penny Loafer",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-penny-loafer-cae-pxccq-f53329",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PXCCQ-F53329CAE_00.jpg?v=1758291306&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Penny LoaferSold outPenny loafers in smooth dark brown leather.Sale price310.00 €Sold out",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PXCCQ-H53330CAE_00.jpg?v=1758291307&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Penny Loafer",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-penny-loafer-cae-pxccq-h53330",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/PXCCQ-H53330CAE_00.jpg?v=1758291307&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Shrunken NY CrewneckMottled grey sweatshirt with Marc Jacobs university logo.Regular price210.00 €Sale price105.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKQ-F37002PLA_00.jpg?v=1758291306&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Shrunken NY Crewneck",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-shrunken-ny-crewneck-pla-cohkq-f37002",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKQ-F37002PLA_00.jpg?v=1758291306&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Shrunken Paris CrewneckNavy blue sweatshirt with A.P.C. university logo.Regular price210.00 €Sale price126.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKQ-F37001IAK_00.jpg?v=1758291306&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Shrunken Paris Crewneck",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-shrunken-paris-crewneck-iak-cohkq-f37001",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKQ-F37001IAK_00.jpg?v=1758291306&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Shrunken PoloBlue polo shirt with large stripes in organic piqué cotton.Regular price150.00 €Sale price90.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKO-F26551TIR_00.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Shrunken Polo",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-shrunken-polo-tir-cohko-f26551",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKO-F26551TIR_00.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "ColorX A.P.C. x Marc Jacobs. The Slim T-ShirtA.P.C. x Marc Jacobs. The Slim T-ShirtWhite T-shirt with mixed A.P.C. and Marc Jacobs logos.Regular price100.00 €Sale price60.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKS-F26555AAB_00.jpg?v=1758293476&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Slim T-Shirt",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-slim-t-shirt-aab-cohks-f26555",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKS-F26555AAB_00.jpg?v=1758293476&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Stoned Canvas Unisex JacketSold outLoose-fitting workwear jacket in thick beige canvas.Regular price450.00 €Sale price270.00 €Sold out",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKM-M32012CAB_00.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Stoned Canvas Unisex Jacket",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-stoned-canvas-unisex-jacket-cab-cohkm-m32012",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKM-M32012CAB_00.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Unisex RugbyOversized red and blue rugby polo shirt.Regular price270.00 €Sale price162.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKP-M26552TID_00.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Unisex Rugby",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-unisex-rugby-tid-cohkp-m26552",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKP-M26552TID_00.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Unisex ShirtOversize unisex shirt in white poplin with blue stripes.Regular price210.00 €Sale price126.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKN-M12640IAA_00.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Unisex Shirt",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-unisex-shirt-iaa-cohkn-m12640",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKN-M12640IAA_00.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Varsity ToteUniversity of Paris and New York blended horizontal tote bag in faded blue denim.Sale price425.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKK-F67064IAL_01.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "A.P.C. x Marc Jacobs. The Varsity Tote",
+        "url": "https://www.apcstore.com/products/apc-x-marc-jacobs-the-varsity-tote-ial-cohkk-f67064",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHKK-F67064IAL_01.jpg?v=1758291305&width=2070"
+      },
+      {
+        "name": "Aaron jeans90s-style wide-leg jeans in organic stonewashed Japanese denim.Regular price250.00 €Sale price150.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHJK-H09182IAL_00.jpg?v=1747907682&width=2070"
+      },
+      {
+        "name": "Aaron jeans",
+        "url": "https://www.apcstore.com/products/aaron-jeans-ial-cohjk-h09182",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COHJK-H09182IAL_00.jpg?v=1747907682&width=2070"
+      },
+      {
+        "name": "Aaron jeansWide-leg 90s-style jeans in indigo denim.Sale price250.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COGDF-H09182IAI_00.jpg?v=1747063184&width=2070"
+      },
+      {
+        "name": "Aaron jeans",
+        "url": "https://www.apcstore.com/products/aaron-jeans-iai-cogdf-h09182",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/COGDF-H09182IAI_00.jpg?v=1747063184&width=2070"
+      },
+      {
+        "name": "Abby topWhite fitted thin-rib T-shirt.Regular price120.00 €Sale price72.00 €",
+        "url": "https://www.apcstore.com/collections/all",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/LYAAW-F26537AAD_00.jpg?v=1756994798&width=2070"
+      },
+      {
+        "name": "Abby top",
+        "url": "https://www.apcstore.com/products/abby-top-aad-lyaaw-f26537",
+        "price": "N/A",
+        "product_id": "N/A",
+        "color": "N/A",
+        "is_new": false,
+        "badge": "N/A",
+        "image": "https://www.apcstore.com/cdn/shop/files/LYAAW-F26537AAD_00.jpg?v=1756994798&width=2070"
+      }
+    ]
+  }
+]

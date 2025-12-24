@@ -1,0 +1,12 @@
+Initiate Orchestration .gradlew bootRun to start the Orchestration layer in Java
+
+Initiate PythonScraper
+
+Initiate API_Server uvicorn api_server:app --reload --port 8000
+
+Initiate Ollama server ( ollama run qwen2.5-coder:14b)
+
+
+Clear cache before initial test or when scraping is not picking up right signal
+
+curl -X DELETE http://localhost:8000/cache

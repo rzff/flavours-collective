@@ -1,59 +1,56 @@
-package com.example.demo.model;
+package com.example.demo.models;
 
-import lombok.Data;
-import lombok.Builder;
-import java.time.LocalDateTime;
-
-@Data
-@Builder
 public class ErrorResponse {
     private String error;
     private String message;
-    private LocalDateTime timestamp;
-    private String errorType;
+    private long timestamp;
+    
+    public String getError() { return error; }
+    public void setError(String error) { this.error = error; }
+    
+    public String getMessage() { return message; }
+    public void setMessage(String message) { this.message = message; }
+    
+    public long getTimestamp() { return timestamp; }
+    public void setTimestamp(long timestamp) { this.timestamp = timestamp; }
     
     public static ErrorResponse timeout(String message) {
-        return ErrorResponse.builder()
-                .error("Scraping Timeout")
-                .message(message)
-                .timestamp(LocalDateTime.now())
-                .errorType("TIMEOUT")
-                .build();
+        ErrorResponse response = new ErrorResponse();
+        response.setError("Scraping Timeout");
+        response.setMessage(message);
+        response.setTimestamp(System.currentTimeMillis());
+        return response;
     }
     
-    public static ErrorResponse selectorError(String message) {
-        return ErrorResponse.builder()
-                .error("Selector Discovery Failed")
-                .message(message)
-                .timestamp(LocalDateTime.now())
-                .errorType("SELECTOR_DISCOVERY")
-                .build();
+    public static ErrorResponse selectorDiscovery(String message) {
+        ErrorResponse response = new ErrorResponse();
+        response.setError("Selector Discovery Failed");
+        response.setMessage(message);
+        response.setTimestamp(System.currentTimeMillis());
+        return response;
     }
     
     public static ErrorResponse cacheError(String message) {
-        return ErrorResponse.builder()
-                .error("Cache Service Error")
-                .message(message)
-                .timestamp(LocalDateTime.now())
-                .errorType("CACHE_ERROR")
-                .build();
+        ErrorResponse response = new ErrorResponse();
+        response.setError("Cache Error");
+        response.setMessage(message);
+        response.setTimestamp(System.currentTimeMillis());
+        return response;
     }
     
-    public static ErrorResponse scrapingError(String message) {
-        return ErrorResponse.builder()
-                .error("Scraping Execution Failed")
-                .message(message)
-                .timestamp(LocalDateTime.now())
-                .errorType("SCRAPING_ERROR")
-                .build();
+    public static ErrorResponse scrapingExecution(String message) {
+        ErrorResponse response = new ErrorResponse();
+        response.setError("Scraping Execution Failed");
+        response.setMessage(message);
+        response.setTimestamp(System.currentTimeMillis());
+        return response;
     }
     
-    public static ErrorResponse genericError(String message) {
-        return ErrorResponse.builder()
-                .error("Internal Server Error")
-                .message(message)
-                .timestamp(LocalDateTime.now())
-                .errorType("GENERIC_ERROR")
-                .build();
+    public static ErrorResponse generic(String message) {
+        ErrorResponse response = new ErrorResponse();
+        response.setError("Internal Server Error");
+        response.setMessage(message);
+        response.setTimestamp(System.currentTimeMillis());
+        return response;
     }
 }

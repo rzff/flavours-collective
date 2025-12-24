@@ -1,0 +1,36 @@
+{
+  "url": "https://about---blank.com/en-eu?srsltid=AfmBOoqDdvgCyr1XDnSdug8r--2bFKkAScxy_XUQgPsovphe8PgHdUdc",
+  "platform": "Shopify",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    ".gap-x-card-gap"
+  ],
+  "best_selector": ".gap-x-card-gap",
+  "field_selectors": {
+    "name": [
+      ".gap-x-card-gap h1",
+      ".gap-x-card-gap h2",
+      ".gap-x-card-gap h3",
+      ".gap-x-card-gap .product-title"
+    ],
+    "price": [
+      ".gap-x-card-gap .price",
+      ".gap-x-card-gap .product-price"
+    ],
+    "image": [
+      ".gap-x-card-gap img.product-image",
+      ".gap-x-card-gap .product-img"
+    ],
+    "description": [
+      ".gap-x-card-gap p.product-desc",
+      ".gap-x-card-gap .product-description"
+    ],
+    "url": [
+      ".gap-x-card-gap a[href*='products']",
+      ".gap-x-card-gap .product-link"
+    ]
+  },
+  "num_products": 5,
+  "scrape_time_s": 8.768483877182007,
+  "was_cached": true
+}

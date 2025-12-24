@@ -1,108 +1,136 @@
 {
-  "www.menyardhomme.com": {
-    "selector": ".product-item__info",
-    "page_type": "infinite_scroll",
-    "field_selectors": {
-      "name": [
-        ".product-item__info h1",
-        ".product-item__info h2",
-        ".product-item__info .title",
-        ".product-item__info .name",
-        ".product-item__info .product-name"
-      ],
-      "price": [
-        ".product-item__info .price",
-        ".product-item__info .cost",
-        ".product-item__info .money",
-        ".product-item__info .currency"
-      ],
-      "image": [
-        ".product-item__info img.image",
-        ".product-item__info img.img",
-        ".product-item__info .product-image"
-      ],
-      "description": [
-        ".product-item__info p.desc",
-        ".product-item__info p.description",
-        ".product-item__info .product-desc"
-      ],
-      "url": [
-        ".product-item__info a.link",
-        ".product-item__info a.product-link",
-        ".product-item__info[href]"
-      ]
-    },
-    "created_at": 1762175330.056702
-  },
-  "www.nike.com": {
-    "selector": ".css-1gk6hs6",
-    "page_type": "infinite_scroll",
-    "field_selectors": {
-      "name": [
-        ".css-1gk6hs6 h1",
-        ".css-1gk6hs6 h2",
-        ".css-1gk6hs6 h3",
-        ".css-1gk6hs6 .title",
-        ".css-1gk6hs6 .name",
-        ".css-1gk6hs6 .product-name"
-      ],
-      "price": [
-        ".css-1gk6hs6 .price",
-        ".css-1gk6hs6 .cost",
-        ".css-1gk6hs6 .money",
-        ".css-1gk6hs6 .currency"
-      ],
-      "image": [
-        ".css-1gk6hs6 img.image",
-        ".css-1gk6hs6 img.img",
-        ".css-1gk6hs6 img.product-image"
-      ],
-      "description": [
-        ".css-1gk6hs6 p.desc",
-        ".css-1gk6hs6 p.description",
-        ".css-1gk6hs6 .product-desc"
-      ],
-      "url": [
-        ".css-1gk6hs6 a.link",
-        ".css-1gk6hs6 a.product-link",
-        ".css-1gk6hs6[href]"
-      ]
-    },
-    "created_at": 1762175468.865854
-  },
-  "www.onitsukatiger.com": {
-    "selector": ".product-item",
+  "icon-amsterdam.com": {
+    "selector": ".justify-items-center",
     "page_type": "pagination",
     "field_selectors": {
       "name": [
-        ".product-item .product-name",
-        ".product-item h1",
-        ".product-item h2",
-        ".product-item h3",
-        ".product-item h4"
+        ".product-card .product-title",
+        ".product-card h1",
+        ".product-card h2",
+        ".product-card h3",
+        ".product-card h4"
       ],
       "price": [
-        ".product-item .price",
-        ".product-item .cost",
-        ".product-item .money",
-        ".product-item .currency"
+        ".product-card .price",
+        ".product-card .money",
+        ".product-card .cost",
+        ".product-card .currency"
       ],
       "image": [
-        ".product-item img.image",
-        ".product-item img.img",
-        ".product-item img.product-image"
+        ".product-card img.image",
+        ".product-card img.img",
+        ".product-card img.product-image"
       ],
       "description": [
-        ".product-item p.desc",
-        ".product-item p.description",
-        ".product-item p.product-desc"
+        ".product-card p.desc",
+        ".product-card p.description",
+        ".product-card p.product-desc"
       ],
       "url": [
-        ".product-item a.link",
-        ".product-item a.product-link",
-        ".product-item[href]"
+        ".product-card a.link",
+        ".product-card a.product-link",
+        "a[href*='quality-clothing-for-you.myshopify.com']"
       ]
     },
-    "created_at": 1762175729.0592792
+    "created_at": 1762278681.799399
+  },
+  "www.colebuxton.com": {
+    "selector": ".layout-panel-flex--row",
+    "page_type": "infinite_scroll",
+    "field_selectors": {
+      "name": [
+        ".product-card .title",
+        ".product-card h1",
+        ".product-card h2",
+        ".product-card h3",
+        ".product-card h4",
+        ".product-card .name"
+      ],
+      "price": [
+        ".product-card .price",
+        ".product-card .cost",
+        ".product-card .money",
+        ".product-card .currency"
+      ],
+      "image": [
+        ".product-card img.image",
+        ".product-card img.img",
+        ".product-card img.product-image"
+      ],
+      "description": [
+        ".product-card p.desc",
+        ".product-card p.description",
+        ".product-card .product-desc"
+      ],
+      "url": [
+        ".product-card a.link",
+        ".product-card a.product-link",
+        "a[href^='http']"
+      ]
+    },
+    "created_at": 1762278768.637793
+  },
+  "about---blank.com": {
+    "selector": ".gap-x-card-gap",
+    "page_type": "infinite_scroll",
+    "field_selectors": {
+      "name": [
+        ".gap-x-card-gap h1",
+        ".gap-x-card-gap h2",
+        ".gap-x-card-gap h3",
+        ".gap-x-card-gap .product-title"
+      ],
+      "price": [
+        ".gap-x-card-gap .price",
+        ".gap-x-card-gap .product-price"
+      ],
+      "image": [
+        ".gap-x-card-gap img.product-image",
+        ".gap-x-card-gap .product-img"
+      ],
+      "description": [
+        ".gap-x-card-gap p.product-desc",
+        ".gap-x-card-gap .product-description"
+      ],
+      "url": [
+        ".gap-x-card-gap a[href*='products']",
+        ".gap-x-card-gap .product-link"
+      ]
+    },
+    "created_at": 1762278852.0402718
+  },
+  "eu.aimeleondore.com": {
+    "selector": "[data-product-id]",
+    "page_type": "infinite_scroll",
+    "field_selectors": {
+      "name": [
+        ".product-card .product-title",
+        ".product-card h1",
+        ".product-card h2",
+        ".product-card h3",
+        ".product-card .name"
+      ],
+      "price": [
+        ".product-card .price",
+        ".product-card .money",
+        ".product-card .cost",
+        ".product-card .currency"
+      ],
+      "image": [
+        ".product-card img.product-image",
+        ".product-card img.image",
+        ".product-card .img"
+      ],
+      "description": [
+        ".product-card p.desc",
+        ".product-card p.description",
+        ".product-card .product-desc"
+      ],
+      "url": [
+        ".product-card a.product-link",
+        ".product-card a[href*='product']"
+      ]
+    },
+    "created_at": 1766614723.250203
   }
 }

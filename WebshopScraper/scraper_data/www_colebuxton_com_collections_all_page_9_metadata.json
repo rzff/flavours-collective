@@ -1,0 +1,43 @@
+{
+  "url": "https://www.colebuxton.com/collections/all?page=9",
+  "platform": "Shopify",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    ".layout-panel-flex--row"
+  ],
+  "best_selector": ".layout-panel-flex--row",
+  "field_selectors": {
+    "name": [
+      ".product-card .title",
+      ".product-card h1",
+      ".product-card h2",
+      ".product-card h3",
+      ".product-card h4",
+      ".product-card .name"
+    ],
+    "price": [
+      ".product-card .price",
+      ".product-card .cost",
+      ".product-card .money",
+      ".product-card .currency"
+    ],
+    "image": [
+      ".product-card img.image",
+      ".product-card img.img",
+      ".product-card img.product-image"
+    ],
+    "description": [
+      ".product-card p.desc",
+      ".product-card p.description",
+      ".product-card .product-desc"
+    ],
+    "url": [
+      ".product-card a.link",
+      ".product-card a.product-link",
+      "a[href^='http']"
+    ]
+  },
+  "num_products": 27,
+  "scrape_time_s": 15.130146026611328,
+  "was_cached": true
+}

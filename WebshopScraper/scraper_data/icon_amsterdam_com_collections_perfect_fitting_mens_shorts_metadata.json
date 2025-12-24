@@ -1,0 +1,42 @@
+{
+  "url": "https://icon-amsterdam.com/collections/perfect-fitting-mens-shorts",
+  "platform": "Shopify",
+  "page_type": "pagination",
+  "selectors_tested": [
+    ".justify-items-center"
+  ],
+  "best_selector": ".justify-items-center",
+  "field_selectors": {
+    "name": [
+      ".product-card .product-title",
+      ".product-card h1",
+      ".product-card h2",
+      ".product-card h3",
+      ".product-card h4"
+    ],
+    "price": [
+      ".product-card .price",
+      ".product-card .money",
+      ".product-card .cost",
+      ".product-card .currency"
+    ],
+    "image": [
+      ".product-card img.image",
+      ".product-card img.img",
+      ".product-card img.product-image"
+    ],
+    "description": [
+      ".product-card p.desc",
+      ".product-card p.description",
+      ".product-card p.product-desc"
+    ],
+    "url": [
+      ".product-card a.link",
+      ".product-card a.product-link",
+      "a[href*='quality-clothing-for-you.myshopify.com']"
+    ]
+  },
+  "num_products": 31,
+  "scrape_time_s": 7.291822910308838,
+  "was_cached": true
+}

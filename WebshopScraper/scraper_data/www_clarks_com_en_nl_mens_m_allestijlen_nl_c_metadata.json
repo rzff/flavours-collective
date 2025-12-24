@@ -1,0 +1,43 @@
+{
+  "url": "https://www.clarks.com/en-nl/mens/m_allestijlen_nl-c",
+  "platform": "Custom",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    ".sc-1612d772-1"
+  ],
+  "best_selector": ".sc-1612d772-1",
+  "field_selectors": {
+    "name": [
+      ".sc-1612d772-1 h1",
+      ".sc-1612d772-1 h2",
+      ".sc-1612d772-1 h3",
+      ".sc-1612d772-1 .title",
+      ".sc-1612d772-1 .name",
+      ".sc-1612d772-1 .product-name"
+    ],
+    "price": [
+      ".sc-1612d772-1 .price",
+      ".sc-1612d772-1 .cost",
+      ".sc-1612d772-1 .money",
+      ".sc-1612d772-1 .currency"
+    ],
+    "image": [
+      ".sc-1612d772-1 img.image",
+      ".sc-1612d772-1 img.img",
+      ".sc-1612d772-1 .product-image"
+    ],
+    "description": [
+      ".sc-1612d772-1 p.desc",
+      ".sc-1612d772-1 p.description",
+      ".sc-1612d772-1 .product-desc"
+    ],
+    "url": [
+      ".sc-1612d772-1 a.link",
+      ".sc-1612d772-1 a.product-link",
+      ".sc-1612d772-1[href]"
+    ]
+  },
+  "num_products": 70,
+  "scrape_time_s": 7.621943235397339,
+  "was_cached": true
+}

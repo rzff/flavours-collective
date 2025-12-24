@@ -1,42 +1,42 @@
 package com.example.demo.controller;
 
-import com.example.demo.exception.*;
-import com.example.demo.model.ErrorResponse;
+import com.example.demo.models.ErrorResponse;
+import com.example.demo.exceptions.*; // Changed to exceptions
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-@ControllerAdvice
+@RestControllerAdvice
 public class ScrapingExceptionHandler {
     
     @ExceptionHandler(ScrapingTimeoutException.class)
     public ResponseEntity<ErrorResponse> handleTimeout(ScrapingTimeoutException ex) {
-        return ResponseEntity.status(HttpStatus.REQUEST_TIMEOUT)
-                .body(ErrorResponse.timeout(ex.getMessage()));
+        ErrorResponse error = ErrorResponse.timeout(ex.getMessage());
+        return ResponseEntity.status(HttpStatus.REQUEST_TIMEOUT).body(error);
     }
     
     @ExceptionHandler(SelectorDiscoveryException.class)
     public ResponseEntity<ErrorResponse> handleSelectorDiscovery(SelectorDiscoveryException ex) {
-        return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY)
-                .body(ErrorResponse.selectorError(ex.getMessage()));
+        ErrorResponse error = ErrorResponse.selectorDiscovery(ex.getMessage());
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(error);
     }
     
     @ExceptionHandler(CacheException.class)
     public ResponseEntity<ErrorResponse> handleCacheException(CacheException ex) {
-        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE)
-                .body(ErrorResponse.cacheError(ex.getMessage()));
+        ErrorResponse error = ErrorResponse.cacheError(ex.getMessage());
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);
     }
     
     @ExceptionHandler(ScrapingExecutionException.class)
     public ResponseEntity<ErrorResponse> handleScrapingExecution(ScrapingExecutionException ex) {
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                .body(ErrorResponse.scrapingError(ex.getMessage()));
+        ErrorResponse error = ErrorResponse.scrapingExecution(ex.getMessage());
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);
     }
     
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> handleGenericException(Exception ex) {
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                .body(ErrorResponse.genericError("An unexpected error occurred"));
+        ErrorResponse error = ErrorResponse.generic(ex.getMessage());
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);
     }
 }

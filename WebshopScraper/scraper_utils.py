@@ -997,18 +997,24 @@ ANALYSIS TASK:
 2. Consider: specificity, product structure, platform patterns
 3. Rank the selectors from best to worst for product extraction
 4. Explain why certain selectors work better than others
+5. Analyse each attribute and its contents to see if the value makes sense
+    examples for point 5. Name: doesn't contain any sizes, has only normal characters;
+    price; is a decimal or integer;
+    product-url: is a url;
+    image: has an image extension
 
 CRITERIA FOR GOOD PRODUCT SELECTORS:
 - Should match multiple similar elements (products)
 - Should contain complete product information (name, price, image, link)
 - Should not be too generic (matching non-product elements)
 - Should be specific enough to avoid nested elements
+- Should be used more then once on the page
 
 RETURN FORMAT:
 {{
     "ranked_selectors": ["best_selector", "second_best", ...],
     "analysis": "Brief explanation of why the top selectors work well",
-    "confidence_score": 0.85
+    "confidence_score": 0.95
 }}
 
 Return ONLY the JSON object.
@@ -1036,14 +1042,23 @@ You are an expert in e-commerce HTML parsing.
 HTML snippet (truncated): {html[:5000]}
 Platform: {platform}
 
-Analyze this HTML and return a JSON array of the 10 most likely CSS selectors for product containers.
+Take into account that languages can be something other then english, so of you can't find a nce selector in english try to see if you can determine
+the language and find a selector that way
+Analyze this HTML and return a JSON array of the most likely CSS selectors for product containers.
 Focus on selectors that:
 1. Match multiple similar elements
-2. Contain product images, names, prices
+2. Contain product images, names, prices and url to the product page
 3. Are specific to product containers, not wrappers
-4. Work for the detected platform
+4. Have the highest overall fill rate
+5. Are inside a bigger list of products in most cases
 
+Product page, name and prices are the most important.
+
+Once you have found the selectors, go over each one and see if you  they are populate the most information (i.e the fill product images, names, prices and url to the product page)
+Do this until you are 98% confident that these are valid selectors.
+Create a JSON array of strings , review this and see if you think this is a reasonable JSON of selectors
 Return ONLY the JSON array of strings.
+
 """
 
     try:
@@ -1348,11 +1363,13 @@ Return format:
 }}
 
 Focus on:
-- Name: Look for headings (h1-h4), elements with class containing: title, name, product-name
-- Price: Look for elements with class containing: price, cost, money, currency
-- Image: Look for img tags with class containing: image, img, product-image
-- Description: Look for p tags with class containing: desc, description, product-desc
-- URL: Look for a tags with class containing: link, product-link, or href attributes
+- Name: Look for headings (h1-h4), elements with class containing: title, name, product-name or something similar
+- Price: Look for elements with class containing: price, cost, money, currency or something similar
+- Image: Look for img tags with class containing: image, img, product-image or something similar
+- Description: Look for p tags with class containing: desc, description, product-desc or something similar
+- URL: Look for a tags with class containing: link, product-link, or href attributes or something similar
+
+Create the JSON format you want to return, review that before sending it and only if you are 98% confident that is correct do you return the JSON.
 
 Return ONLY the JSON object.
 """

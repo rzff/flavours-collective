@@ -1,0 +1,38 @@
+{
+  "url": "https://www.bax-shop.nl/home-audio/koptelefoons?o=popular&online_stock%5B%5D=0&demoShop%5B%5D=2",
+  "platform": "Custom",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    "[data-product]"
+  ],
+  "best_selector": "[data-product]",
+  "field_selectors": {
+    "name": [
+      ".product-card .product-name",
+      ".title"
+    ],
+    "price": [
+      ".price-container .price",
+      ".cost",
+      ".money",
+      ".currency"
+    ],
+    "image": [
+      "img.product-image",
+      "img.image",
+      ".product-card img"
+    ],
+    "description": [
+      "p.product-desc",
+      "p.description",
+      ".desc"
+    ],
+    "url": [
+      ".product-link a[href]",
+      "a.product-link"
+    ]
+  },
+  "num_products": 21,
+  "scrape_time_s": 10.423826932907104,
+  "was_cached": true
+}

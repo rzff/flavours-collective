@@ -1,0 +1,90 @@
+{
+  "url": "https://www.colebuxton.com/collections/all",
+  "platform": "Shopify",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    ".layout-panel-flex--row",
+    "#product-card-AeGxoUGl3V243Wk5Fd__product-card-11",
+    ".product-badges",
+    "#pi-ideal",
+    ".section-background",
+    ".localization-form",
+    ".custom-font-size",
+    ".h3",
+    "#Spain",
+    "#Afghanistan",
+    ".product-badges__badge--rectangle",
+    "#Timor-Leste",
+    ".grid",
+    "#Haiti",
+    "#account-popover",
+    "#Luxembourg",
+    ".text-block--ARE1pdVJJeUd5dTNpN__text_BFtXMi-10",
+    ".link",
+    ".facets-remove--mobile-and-vertical",
+    "#Fiji",
+    "#Yemen",
+    ".card-gallery-ASXBHT2tIU2duNWlkb__card-gallery-15",
+    "#product-card-AeGxoUGl3V243Wk5Fd__product-card-22",
+    ".color-scheme-matches-parent",
+    "#template--25754415169913__main-15053106282873",
+    "#a4a63d8378355868b7d8d3c5acc1eb19",
+    "#pi-master",
+    "#Montserrat",
+    "#shopify-block-AL0tvZktIbngxNkhPO__icon_JfBaG4",
+    ".spacing-style",
+    ".checkbox__label",
+    ".rte",
+    ".user-select-text",
+    "#Seychelles",
+    ".text-block--ANWlpQ0hCVmVnOXBkZ__product_title_tW97gA-22",
+    ".size-style",
+    "#Faroe Islands",
+    ".icon-plus",
+    "#Panama",
+    "#Pitcairn Islands",
+    ".visually-hidden",
+    ".color-scheme-1",
+    "#Netherlands",
+    ".card-gallery-ASXBHT2tIU2duNWlkb__card-gallery-10",
+    ".product-grid__item--21",
+    "#Guadeloupe",
+    ".email-signup__button--integrated",
+    ".localization-form__list-item"
+  ],
+  "best_selector": ".layout-panel-flex--row",
+  "field_selectors": {
+    "name": [
+      ".product-card .title",
+      ".product-card h1",
+      ".product-card h2",
+      ".product-card h3",
+      ".product-card h4",
+      ".product-card .name"
+    ],
+    "price": [
+      ".product-card .price",
+      ".product-card .cost",
+      ".product-card .money",
+      ".product-card .currency"
+    ],
+    "image": [
+      ".product-card img.image",
+      ".product-card img.img",
+      ".product-card img.product-image"
+    ],
+    "description": [
+      ".product-card p.desc",
+      ".product-card p.description",
+      ".product-card .product-desc"
+    ],
+    "url": [
+      ".product-card a.link",
+      ".product-card a.product-link",
+      "a[href^='http']"
+    ]
+  },
+  "num_products": 25,
+  "scrape_time_s": 35.275864124298096,
+  "was_cached": false
+}

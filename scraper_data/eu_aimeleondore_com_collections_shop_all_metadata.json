@@ -1,0 +1,90 @@
+{
+  "url": "https://eu.aimeleondore.com/collections/shop-all",
+  "platform": "Shopify",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    ".temp-fix-scaling",
+    ".money",
+    ".site-name",
+    "#email_signup",
+    ".commitment-popup__content",
+    "#shopify-features",
+    ".plp-carousel__image",
+    ".popup-country-switcher-overlay",
+    "#k_id_email_product",
+    ".popup-country-switcher",
+    ".cls-1",
+    "li > div",
+    "#commitment-popup",
+    "[data-product-id]",
+    ".justify-content-between",
+    ".site-name__logo-crest",
+    ".d-lg-block",
+    ".grid > div",
+    ".blocked-label",
+    ".list > div",
+    ".lds-ellipsis",
+    ".commitment-popup",
+    ".container",
+    ".no-js",
+    ".active-toolbar-columns",
+    ".general-popup-overlay-3",
+    ".loading-collection-products",
+    "#captcha-bootstrap",
+    ".container-wrapper",
+    ".general-close-3",
+    ".sizeselection",
+    ".currencies-from-globale",
+    ".products-collection",
+    "#shopify-section-collection-template",
+    ".custom-select-country",
+    "#popup-country-success",
+    ".commitment-popup__wrapper",
+    ".plp-product__variants",
+    ".h-lg-100",
+    "#email_signup_product",
+    ".mid-col",
+    "#accessibility-removeallstyling",
+    "#showsale7",
+    ".h-100",
+    ".d-lg-flex",
+    ".grid-row",
+    ".btn--white",
+    "#popup-answer",
+    ".form-group",
+    ".popup-a-bottom-list__link"
+  ],
+  "best_selector": "[data-product-id]",
+  "field_selectors": {
+    "name": [
+      ".product-card .product-title",
+      ".product-card h1",
+      ".product-card h2",
+      ".product-card h3",
+      ".product-card .name"
+    ],
+    "price": [
+      ".product-card .price",
+      ".product-card .money",
+      ".product-card .cost",
+      ".product-card .currency"
+    ],
+    "image": [
+      ".product-card img.product-image",
+      ".product-card img.image",
+      ".product-card .img"
+    ],
+    "description": [
+      ".product-card p.desc",
+      ".product-card p.description",
+      ".product-card .product-desc"
+    ],
+    "url": [
+      ".product-card a.product-link",
+      ".product-card a[href*='product']"
+    ]
+  },
+  "num_products": 64,
+  "scrape_time_s": 28.916386127471924,
+  "was_cached": false
+}

@@ -1,0 +1,40 @@
+{
+  "url": "https://www.clarks.com/en-nl/mens/boots/chelsea-boots/m_chelsea_nl-c",
+  "platform": "Custom",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    ".sc-65db87a2-1"
+  ],
+  "best_selector": ".sc-65db87a2-1",
+  "field_selectors": {
+    "name": [
+      ".sc-65db87a2-1 h1",
+      ".sc-65db87a2-1 h2",
+      ".sc-65db87a2-1 .product-name"
+    ],
+    "price": [
+      ".sc-65db87a2-1 .price",
+      ".sc-65db87a2-1 .cost",
+      ".sc-65db87a2-1 .money",
+      ".sc-65db87a2-1 .currency"
+    ],
+    "image": [
+      ".sc-65db87a2-1 img.image",
+      ".sc-65db87a2-1 img.img",
+      ".sc-65db87a2-1 img.product-image"
+    ],
+    "description": [
+      ".sc-65db87a2-1 p.desc",
+      ".sc-65db87a2-1 p.description",
+      ".sc-65db87a2-1 .product-desc"
+    ],
+    "url": [
+      ".sc-65db87a2-1 a.link",
+      ".sc-65db87a2-1 a.product-link",
+      ".sc-65db87a2-1[href]"
+    ]
+  },
+  "num_products": 39,
+  "scrape_time_s": 6.946316242218018,
+  "was_cached": true
+}

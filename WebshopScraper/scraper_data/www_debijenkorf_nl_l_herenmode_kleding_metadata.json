@@ -1,0 +1,60 @@
+{
+  "url": "https://www.debijenkorf.nl/l/herenmode/kleding",
+  "platform": "Custom",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    ".main-content",
+    "article > div",
+    ".h2",
+    ".lds-ring",
+    "#cf-chl-widget-t39sh_response",
+    ".ray-id",
+    "#challenge-success-text",
+    "#challenge-error-text",
+    "#BAMDl0",
+    "#JHsxi5",
+    "#pCrm6",
+    ".main-wrapper",
+    ".clearfix",
+    ".grid > div",
+    ".h1",
+    ".spacer-top",
+    "section > div",
+    ".text-center",
+    ".spacer",
+    ".core-msg",
+    "#aHoNG5",
+    "section",
+    "#YqcjS8",
+    ".list > div",
+    ".diagnostic-wrapper",
+    ".loading-verifying",
+    ".spacer-bottom",
+    ".zone-name-title",
+    ".heading-favicon",
+    "article",
+    "div > div",
+    "li > div"
+  ],
+  "best_selector": ".main-content",
+  "field_selectors": {
+    "name": [
+      ".h2"
+    ],
+    "price": [
+      "[class*='price'], [class*='cost'], [class*='money'], [class*='currency']"
+    ],
+    "image": [
+      "img[class*='image'], img[class*='img'], img[class*='product-image']"
+    ],
+    "description": [
+      "p[class*='desc'], p[class*='description'], p[class*='product-desc']"
+    ],
+    "url": [
+      "a[class*='link'], a[class*='product-link'], a[href]"
+    ]
+  },
+  "num_products": 1,
+  "scrape_time_s": 27.113736867904663,
+  "was_cached": false
+}

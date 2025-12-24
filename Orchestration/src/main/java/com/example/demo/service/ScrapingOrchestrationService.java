@@ -1,45 +1,49 @@
 package com.example.demo.service;
 
-import com.example.demo.model.*;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.demo.models.*;
+import com.example.demo.repository.ProductRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.client.RestTemplate;
+import java.util.Map;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ScrapingOrchestrationService {
-    
-    private final CacheService cacheService;
-    private final AgentCoordinator agentCoordinator;
-    private final PerformanceMonitor performanceMonitor;
-    
-    @Autowired
-    public ScrapingOrchestrationService(CacheService cacheService,
-                                      AgentCoordinator agentCoordinator,
-                                      PerformanceMonitor performanceMonitor) {
-        this.cacheService = cacheService;
-        this.agentCoordinator = agentCoordinator;
-        this.performanceMonitor = performanceMonitor;
+
+    // 1. DO NOT use "= new RestTemplate()" here. Leave it blank.
+    private final RestTemplate restTemplate;
+    private final ProductRepository productRepository; 
+    private final String FASTAPI_URL = "http://127.0.0.1:8000/scrape";
+
+    // 2. Spring will now inject your custom Config (the 120s timeout) into this constructor
+    public ScrapingOrchestrationService(ProductRepository productRepository, RestTemplate restTemplate) {
+        this.productRepository = productRepository;
+        this.restTemplate = restTemplate;
     }
-    
+
+    @Transactional
     public ScrapingResult scrapeProducts(String url, ScrapingRequest request) {
-        // 1. Check cache first
-        CacheResult cacheResult = cacheService.checkDomainCache(url);
+        Map<String, String> payload = Map.of("url", url);
         
-        if (cacheResult.isHit() && cacheResult.isValid() && !request.isForceRefresh()) {
-            return buildResponseFromCache(cacheResult);
+        try {
+            // 3. This call will now wait for 120 seconds instead of 7.
+            ScrapingResult result = restTemplate.postForObject(FASTAPI_URL, payload, ScrapingResult.class);
+            
+            if (result != null && result.getProducts() != null) {
+                List<ProductEntity> entities = result.getProducts().stream()
+                    .map(ProductEntity::fromProduct)
+                    .collect(Collectors.toList());
+                
+                productRepository.saveAll(entities);
+            }
+            
+            return result;
+        } catch (Exception e) {
+            // Log the error so you can see exactly why it failed
+            System.err.println("Error during FastAPI call: " + e.getMessage());
+            throw new RuntimeException("FastAPI Connection Failed: " + e.getMessage());
         }
-        
-        // 2. Orchestrate agent workflow
-        return agentCoordinator.executeScrapingWorkflow(url, request, cacheResult);
-    }
-    
-    private ScrapingResult buildResponseFromCache(CacheResult cacheResult) {
-        ScrapingResult result = new ScrapingResult();
-        result.setUrl(cacheResult.getSelectorInfo().getMainSelector());
-        result.setPlatform(cacheResult.getSelectorInfo().getPlatform());
-        result.setPageType(cacheResult.getSelectorInfo().getPageType());
-        result.setSelector(cacheResult.getSelectorInfo().getMainSelector());
-        result.setFieldSelectors(cacheResult.getSelectorInfo().getFieldSelectors());
-        result.setCacheStatus("HIT");
-        return result;
     }
 }

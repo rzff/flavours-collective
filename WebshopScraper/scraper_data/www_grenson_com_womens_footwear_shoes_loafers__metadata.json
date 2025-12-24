@@ -1,0 +1,39 @@
+{
+  "url": "https://www.grenson.com/womens-footwear/shoes/loafers/",
+  "platform": "Custom",
+  "page_type": "pagination",
+  "selectors_tested": [
+    ".card"
+  ],
+  "best_selector": ".card",
+  "field_selectors": {
+    "name": [
+      ".card h1",
+      ".card h2",
+      ".card h3",
+      ".card .product-name"
+    ],
+    "price": [
+      ".card .price",
+      ".card .cost",
+      ".card .money",
+      ".card .currency"
+    ],
+    "image": [
+      ".card img.product-image",
+      ".card .img"
+    ],
+    "description": [
+      ".card p.product-desc",
+      ".card .desc"
+    ],
+    "url": [
+      ".card a.product-link",
+      ".card a[href]",
+      ".card .link"
+    ]
+  },
+  "num_products": 36,
+  "scrape_time_s": 11.916792869567871,
+  "was_cached": true
+}

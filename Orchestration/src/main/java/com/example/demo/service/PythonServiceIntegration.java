@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.model.*;
+import com.example.demo.models.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

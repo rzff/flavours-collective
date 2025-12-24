@@ -1,0 +1,83 @@
+{
+  "url": "https://www.selmer.fr/en/collections/saxophone-soprano",
+  "platform": "Shopify",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    "section > div",
+    ".global-settings-popup",
+    "#pi-apple_pay",
+    ".hero-banner--with-image",
+    ".spinner",
+    ".ax-section",
+    ".localization",
+    "#title-template--23782531301719__product-grid-7710191091881",
+    "#shopify-section-template--23782531301719__banner",
+    "#childlink-Blog",
+    ".disclosure__link",
+    "#ProductGridContainer",
+    ".price__regular",
+    ".grid--4-col-desktop",
+    ".link--text",
+    ".from",
+    ".skip-to-content-link",
+    ".disclosure__button",
+    ".h5",
+    ".stack-mobile",
+    "#childlink-Limited Editions",
+    ".price__container",
+    ".card__information",
+    "#sections-script",
+    "#link-E-BOUTIQUE",
+    ".no-js-hidden",
+    ".localization-selector",
+    ".money",
+    "#shopify-digital-wallet",
+    ".caption-large",
+    "#ecomsend-custom-style",
+    ".card__content",
+    "#childlink-MORE",
+    "#shopify-block-AaUY3TDlOK3J2UVAyQ__4015264832934714879",
+    ".section-ax-reassurances-padding",
+    ".visually-hidden",
+    ".card__media",
+    ".card--media",
+    ".newsletter-block",
+    ".localization-form__select",
+    ".announcement-bar",
+    ".reassurance-subheading",
+    ".field__button",
+    ".shopify-app-block",
+    "#pi-visa",
+    ".price-item",
+    ".collection",
+    ".underline-links-hover",
+    ".list-unstyled",
+    ".hero-banner__image"
+  ],
+  "best_selector": ".card__information",
+  "field_selectors": {
+    "name": [
+      ".card__title",
+      ".product-title"
+    ],
+    "price": [
+      ".price",
+      ".money"
+    ],
+    "image": [
+      "img.product-image",
+      "img.image"
+    ],
+    "description": [
+      "p.product-desc",
+      "p.description"
+    ],
+    "url": [
+      "a.product-link",
+      "a[href]"
+    ]
+  },
+  "num_products": 2,
+  "scrape_time_s": 28.616792917251587,
+  "was_cached": false
+}

@@ -1,0 +1,43 @@
+{
+  "url": "https://www.menyardhomme.com/collections/sweaters",
+  "platform": "Shopify",
+  "page_type": "infinite_scroll",
+  "selectors_tested": [
+    ".product-item"
+  ],
+  "best_selector": ".product-item",
+  "field_selectors": {
+    "name": [
+      ".product-item h1",
+      ".product-item h2",
+      ".product-item h3",
+      ".product-item .title",
+      ".product-item .name",
+      ".product-item .product-name"
+    ],
+    "price": [
+      ".product-item .price",
+      ".product-item .cost",
+      ".product-item .money",
+      ".product-item .currency"
+    ],
+    "image": [
+      ".product-item img.image",
+      ".product-item img.img",
+      ".product-item .product-image"
+    ],
+    "description": [
+      ".product-item p.desc",
+      ".product-item p.description",
+      ".product-item .product-desc"
+    ],
+    "url": [
+      ".product-item a.link",
+      ".product-item a.product-link",
+      ".product-item[href]"
+    ]
+  },
+  "num_products": 22,
+  "scrape_time_s": 7.448107004165649,
+  "was_cached": true
+}

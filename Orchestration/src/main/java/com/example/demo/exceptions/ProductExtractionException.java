@@ -1,4 +1,4 @@
-package com.example.demo.exception;
+package com.example.demo.exceptions;
 
 public class ProductExtractionException extends RuntimeException {
     public ProductExtractionException(String message) {
