@@ -2,23 +2,29 @@ package com.example.demo.service;
 
 import com.example.demo.models.*;
 import com.example.demo.repository.ProductRepository;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+import org.springframework.beans.factory.annotation.Value; // Add this import
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestTemplate;
-import java.util.Map;
-import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class ScrapingOrchestrationService {
 
-    // 1. DO NOT use "= new RestTemplate()" here. Leave it blank.
     private final RestTemplate restTemplate;
-    private final ProductRepository productRepository; 
-    private final String FASTAPI_URL = "http://127.0.0.1:8000/scrape";
+    private final ProductRepository productRepository;
 
-    // 2. Spring will now inject your custom Config (the 120s timeout) into this constructor
-    public ScrapingOrchestrationService(ProductRepository productRepository, RestTemplate restTemplate) {
+    // This reads the env var from Docker Compose.
+    // If it's missing, it defaults to localhost for local dev.
+    @Value("${SCRAPER_URL:http://127.0.0.1:8000}")
+    private String scraperBaseUrl;
+
+    public ScrapingOrchestrationService(
+        ProductRepository productRepository,
+        RestTemplate restTemplate
+    ) {
         this.productRepository = productRepository;
         this.restTemplate = restTemplate;
     }
@@ -26,24 +32,40 @@ public class ScrapingOrchestrationService {
     @Transactional
     public ScrapingResult scrapeProducts(String url, ScrapingRequest request) {
         Map<String, String> payload = Map.of("url", url);
-        
+
+        // Build the full URL dynamically
+        String fullUrl = scraperBaseUrl + "/scrape";
+
         try {
-            // 3. This call will now wait for 120 seconds instead of 7.
-            ScrapingResult result = restTemplate.postForObject(FASTAPI_URL, payload, ScrapingResult.class);
-            
+            System.out.println("Attempting to call Scraper at: " + fullUrl); // Useful for logging
+
+            ScrapingResult result = restTemplate.postForObject(
+                fullUrl,
+                payload,
+                ScrapingResult.class
+            );
+
             if (result != null && result.getProducts() != null) {
-                List<ProductEntity> entities = result.getProducts().stream()
+                List<ProductEntity> entities = result
+                    .getProducts()
+                    .stream()
                     .map(ProductEntity::fromProduct)
                     .collect(Collectors.toList());
-                
+
                 productRepository.saveAll(entities);
             }
-            
+
             return result;
         } catch (Exception e) {
-            // Log the error so you can see exactly why it failed
-            System.err.println("Error during FastAPI call: " + e.getMessage());
-            throw new RuntimeException("FastAPI Connection Failed: " + e.getMessage());
+            System.err.println(
+                "Error during FastAPI call to " +
+                    fullUrl +
+                    ": " +
+                    e.getMessage()
+            );
+            throw new RuntimeException(
+                "FastAPI Connection Failed: " + e.getMessage()
+            );
         }
     }
 }

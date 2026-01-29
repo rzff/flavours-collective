@@ -1,0 +1,61 @@
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: postgres_db
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=project_db
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d project_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # This service runs your Python API (Uvicorn)
+  api_server:
+    build: ./WebshopScraper
+    ports:
+      - "8000:8000"
+    command: uvicorn api_server:app --host 0.0.0.0 --port 8000
+    environment:
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  # This service runs the Scraper logic
+  scraper:
+    build: ./WebshopScraper
+    shm_size: "2gb"
+    command: python scraper.py # Adjust this to your scraper's entry script
+    depends_on:
+      - api_server
+    environment:
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  orchestrator:
+    build: ./Orchestration
+    restart: on-failure
+    ports:
+      - "8080:8080" # Avoid port conflicts if 8080 is used elsewhere
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/project_db
+      - SPRING_DATASOURCE_USERNAME=user
+      - SPRING_DATASOURCE_PASSWORD=password
+      - SCRAPER_URL=http://api_server:8000
+    depends_on:
+      db:
+        condition: service_healthy
+
+  frontend:
+    build: ./FlavoursCollectiveFrontEnd/flavourscollective
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8081
+    depends_on:
+      - orchestrator

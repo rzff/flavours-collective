@@ -5,12 +5,17 @@ export const dynamic = "force-dynamic";
 
 async function getProducts(): Promise<Product[]> {
   try {
-    const res = await fetch("http://localhost:8080/api/products", {
+    // Inside Docker, containers talk to each other via their service names
+    const res = await fetch("http://orchestrator:8080/api/products", {
       cache: "no-store",
     });
-    if (!res.ok) return [];
+    if (!res.ok) {
+      console.error("Fetch failed with status:", res.status);
+      return [];
+    }
     return res.json();
   } catch (e) {
+    console.error("Fetch error:", e);
     return [];
   }
 }

@@ -1,0 +1,18 @@
+# Web Framework & Server
+fastapi==0.120.1
+uvicorn==0.34.0
+pydantic==2.12.2
+
+# Core Scraping & Async
+crawl4ai>=0.4.2
+playwright==1.55.0
+beautifulsoup4==4.12.3
+aiohttp==3.13.0
+aiofiles==25.1.0
+requests==2.32.3
+
+# Utilities & AI Integration
+langchain-ollama  # For clean communication with Qwen
+python-dotenv     # To handle environment variables
+html2text         # Essential for cleaning HTML for LLMs
+urllib3<2.0.0     # Specific version often required for Crawl4AI stability
