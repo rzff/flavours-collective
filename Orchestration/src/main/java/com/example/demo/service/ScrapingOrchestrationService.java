@@ -68,4 +68,31 @@ public class ScrapingOrchestrationService {
             );
         }
     }
+
+
+
+@Transactional
+public ScrapingResult saveScrapedResults(ScrapingResult results) {
+    System.out.println("Storing " + results.getData().getProductCount() + " products from " + results.getData().getPlatform());
+
+    try {
+        List<ProductEntity> entities = results.getData().getProducts().stream()
+            .map(ProductEntity::fromProduct)
+            .collect(Collectors.toList());
+
+        System.out.println("Mapped to " + entities.size() + " entities. Committing to DB...");
+        
+        // This is the critical line:
+        List<ProductEntity> saved = productRepository.saveAll(entities);
+        
+        System.out.println("Successfully saved " + saved.size() + " items to the database.");
+        results.setSuccess(true);
+    } catch (Exception e) {
+        System.err.println("DB SAVE ERROR: " + e.getMessage());
+        e.printStackTrace(); // This will show up in your Docker logs if it fails
+        results.setSuccess(false);
+    }
+
+    return results;
+}
 }

@@ -1,14 +1,13 @@
 package com.example.demo.controller;
 
 import com.example.demo.models.ProductEntity;
-import com.example.demo.repository.ProductRepository; // Matches your folder name
+import com.example.demo.repository.ProductRepository;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/products")
-@CrossOrigin(origins = "http://localhost:3000") // This allows Next.js to talk to Java
+@CrossOrigin(origins = "*") // Changed to "*" for easier testing, or keep your Next.js URL
 public class ProductController {
 
     private final ProductRepository productRepository;
@@ -19,7 +18,6 @@ public class ProductController {
 
     @GetMapping
     public List<ProductEntity> getAllProducts() {
-    // This executes: SELECT * FROM products;
-    return productRepository.findAll(); 
-}
+        return productRepository.findAll(); 
+    }
 }

@@ -66,13 +66,13 @@ public class ProductEntity {
     }
     
     public static ProductEntity fromProduct(Product product) {
-        ProductEntity entity = new ProductEntity();
-        entity.setName(product.getName());
-        entity.setUrl(product.getUrl());
-        entity.setPrice(product.getPrice());
-        entity.setImageUrl(product.getImageUrl());
-        entity.setDescription(product.getDescription());
-        entity.setInStock(product.getInStock());
-        return entity;
-    }
+    ProductEntity entity = new ProductEntity();
+    entity.setName(product.getName());
+    entity.setUrl(product.getUrl());
+    entity.setPrice(product.getPrice()); // This now works for both price and priceRaw
+    entity.setImageUrl(product.getImageUrl());
+    entity.setDescription(product.getDescription());
+    entity.setInStock(product.getInStock());
+    return entity;
+}
 }
