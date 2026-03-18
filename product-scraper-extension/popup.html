@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <style>
+            /* ... keep all existing styles from your original popup.html ... */
             body {
                 width: 500px;
                 max-height: 600px;
@@ -89,6 +90,19 @@
             #scrape-with-details:hover {
                 background: #1976d2;
             }
+
+            /* New Pin Button Style */
+            #pin-product-btn {
+                background: #764ba2;
+                margin-bottom: 15px;
+                display: none;
+                width: 100%;
+                flex: none;
+            }
+            #pin-product-btn:hover {
+                background: #5e3a85;
+            }
+
             .results-section {
                 flex: 1;
                 display: flex;
@@ -97,7 +111,7 @@
             }
             .results-header {
                 display: flex;
-                justify-content: between;
+                justify-content: space-between;
                 align-items: center;
                 margin-bottom: 10px;
                 flex-shrink: 0;
@@ -115,9 +129,8 @@
                 background: #6c757d;
                 padding: 6px 12px;
                 font-size: 12px;
-            }
-            .export-btn:hover {
-                background: #5a6268;
+                flex: none;
+                width: auto;
             }
             .products-container {
                 flex: 1;
@@ -132,18 +145,11 @@
                 border-bottom: 1px solid #e9ecef;
                 transition: background 0.2s;
             }
-            .product-item:hover {
-                background: #f8f9fa;
-            }
-            .product-item:last-child {
-                border-bottom: none;
-            }
             .product-name {
                 font-weight: 600;
                 color: #212529;
                 margin-bottom: 8px;
                 font-size: 14px;
-                line-height: 1.4;
             }
             .product-details {
                 display: grid;
@@ -167,40 +173,24 @@
                 font-weight: 500;
             }
             .product-image {
-              width: 100%;
-              height: 120px;
-              object-fit: contain;
-              border-radius: 4px;
-              margin-top: 8px;
-              background: #f8f9fa;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              color: #6c757d;
-              font-size: 11px;
-              border: 1px solid #e9ecef;
-              overflow: hidden;
+                width: 100%;
+                height: 120px;
+                object-fit: contain;
+                border-radius: 4px;
+                margin-top: 8px;
+                background: #f8f9fa;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #6c757d;
+                font-size: 11px;
+                border: 1px solid #e9ecef;
+                overflow: hidden;
             }
-
             .product-image img {
-              max-width: 100%;
-              max-height: 100%;
-              object-fit: contain;
-              transition: transform 0.2s;
-            }
-
-            .product-image img:hover {
-              transform: scale(1.05);
-            }
-
-            .no-image {
-              background: #e9ecef;
-              color: #6c757d;
-              font-style: italic;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            }
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
             }
             .status-message {
                 padding: 15px;
@@ -224,36 +214,6 @@
                 color: #0c5460;
                 border: 1px solid #bee5eb;
             }
-            .loading::after {
-                content: "...";
-                animation: dots 1.5s steps(4, end) infinite;
-            }
-            @keyframes dots {
-                0%,
-                20% {
-                    color: rgba(0, 0, 0, 0);
-                    text-shadow:
-                        0.25em 0 0 rgba(0, 0, 0, 0),
-                        0.5em 0 0 rgba(0, 0, 0, 0);
-                }
-                40% {
-                    color: #0c5460;
-                    text-shadow:
-                        0.25em 0 0 rgba(0, 0, 0, 0),
-                        0.5em 0 0 rgba(0, 0, 0, 0);
-                }
-                60% {
-                    text-shadow:
-                        0.25em 0 0 #0c5460,
-                        0.5em 0 0 rgba(0, 0, 0, 0);
-                }
-                80%,
-                100% {
-                    text-shadow:
-                        0.25em 0 0 #0c5460,
-                        0.5em 0 0 #0c5460;
-                }
-            }
             .hidden {
                 display: none;
             }
@@ -261,10 +221,7 @@
     </head>
     <body>
         <div class="container">
-            <div class="header">
-                <h3>🛍️ Product Scraper</h3>
-            </div>
-
+            <div class="header"><h3>Product Scraper</h3></div>
             <div class="content">
                 <div class="url-section">
                     <div
@@ -286,6 +243,23 @@
                     <button id="scrape-with-details">Scrape Details</button>
                 </div>
 
+                <button id="pin-product-btn">
+                    📌 Pin to Collection (Mock)
+                </button>
+
+                <button
+                    id="shopify-json-btn"
+                    style="
+                        display: none;
+                        margin-bottom: 15px;
+                        background: #ff6900;
+                        width: 100%;
+                        flex: none;
+                    "
+                >
+                    Print Shopify JSON to Console
+                </button>
+
                 <div id="status" class="status-message hidden"></div>
 
                 <div class="results-section hidden" id="results-section">
@@ -296,16 +270,18 @@
                                 Copy JSON
                             </button>
                             <button class="export-btn" id="view-console">
-                                View in Console
+                                View Console
                             </button>
                         </div>
                     </div>
-                    <div class="products-container" id="products-container">
-                        <!-- Products will be inserted here -->
-                    </div>
+                    <div
+                        class="products-container"
+                        id="products-container"
+                    ></div>
                 </div>
             </div>
         </div>
+        <script src="PlatformDetector.js"></script>
         <script src="popup.js"></script>
     </body>
 </html>
